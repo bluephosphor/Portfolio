@@ -2,15 +2,17 @@
 <html>
     <head>
         <title> Niko's Portfolio </title>
+        <link rel="stylesheet" href="native.css">
         <style>
+            
             body {
                 background-color:rgb(39, 36, 54);
-                color: rgb(123, 82, 185);
+                color: rgb(187, 161, 226);
                 font-family: monospace;
             }
 
             h1 {
-                color:rgb(148, 104, 241);
+                color:rgb(177, 136, 238);
             }
 
             div {
@@ -25,6 +27,19 @@
                 border-color: darkslategray;
                 align-self: center;
             }
+
+            .codehilite {
+                width: 464px;
+            }
+
+            blockquote {
+                background-color: rgb(23, 31, 31);
+                color:rgb(180, 161, 223);
+                border-left-width: 3px;
+                border-left-style: solid;
+                border-left-color: darkslategray;
+                padding: 16px;
+            }
         </style>
     </head>
     <body>
@@ -34,6 +49,37 @@
             <h1>This is an example header.</h1>
 
 <p>This is an example paragraph.</p>
+
+<p><em>This is an example list.</em></p>
+
+<ul>
+<li>Hello</li>
+<li>I am content.</li>
+<li>Weeeee</li>
+</ul>
+
+<blockquote>
+  <p><em>Here's a blockquote!</em></p>
+  
+  <p><em>~ Niko the ghost</em> (Circa 2021)</p>
+</blockquote>
+
+<div class="codehilite"><pre><span></span><code>    <span class="c1">//Here&#39;s an example code block!</span>
+
+    <span class="kd">function</span> <span class="nx">fuckYou</span><span class="p">(){</span>
+
+        <span class="kd">let</span> <span class="nx">list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Fuck&quot;</span><span class="p">,</span> <span class="s2">&quot;you&quot;</span><span class="p">,</span> <span class="s2">&quot;entirely&quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">];</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">list</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="nx">str</span> <span class="o">+=</span> <span class="nx">list</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="nx">str</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div>
+
+<p>Cool stuff, right?</p>
  
         
         </div>
