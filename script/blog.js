@@ -1,3 +1,3 @@
 const article = "https://nikotheghost.neocities.org/article/test.md";
 
-fetch_markdown(article, 'content');
+Site.fetch_markdown(article, 'content');
