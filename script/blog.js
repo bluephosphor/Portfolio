@@ -1,3 +1,4 @@
-const article = "https://nikotheghost.neocities.org/article/test.md";
+const PATH    = "asset/md/blog/";
+const article = "atc_history.md";
 
-Site.fetch_markdown(article, 'content');
+Site.fetch_markdown(PATH + article, 'content');

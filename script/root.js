@@ -18,6 +18,6 @@ const Site = {
   }
 }
 // Building the main navbar for every page.
-id('nav-main').innerHTML += `<img class="img-round" src="asset/phosphora.png">`;
+id('nav-main').innerHTML += `<img class="img-round" src="asset/img/phosphora.png">`;
 
 Site.page.forEach(elem => id("nav-main").innerHTML += `<a href="${elem.url}">${elem.name}</a>`);

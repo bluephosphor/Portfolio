@@ -5,4 +5,4 @@ Welcome to my site! My name is Jonny (my friends call me Niko) and I'm currently
 Thanks for stopping by! :3`;
 
 id('content').innerHTML = marked(intro);
-id('nav-secondary').innerHTML += `<img class="img-round" src="asset/fallshrubbie.png">`;
+id('nav-secondary').innerHTML += `<img class="img-round" src="asset/img/fallshrubbie.png">`;
