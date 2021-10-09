@@ -53,7 +53,7 @@ body{
   @include box;
   margin-left:  16px;
   margin-right: 16px;
-  flex-grow:    8;
+  flex-grow:    10;
   overflow:     auto;
   min-width:    300px;
 }
@@ -108,7 +108,7 @@ article{
   display:        flex;
   flex-direction: column;
   flex-grow:      1;
-  width:          40%;
+  width:          20%;
   min-width:      150px;
   max-width:      200px;
   color:          $text-main;

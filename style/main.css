@@ -37,7 +37,7 @@ body {
   border: 1px solid #CBC0CC;
   margin-left: 16px;
   margin-right: 16px;
-  flex-grow: 8;
+  flex-grow: 10;
   overflow: auto;
   min-width: 300px;
 }
@@ -74,6 +74,7 @@ article img {
 }
 
 .list-footer {
+  color: #9b7b9e;
   display: flex;
   justify-content: space-between;
 }
@@ -89,7 +90,7 @@ article img {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 40%;
+  width: 20%;
   min-width: 150px;
   max-width: 200px;
   color: #CBC0CC;
