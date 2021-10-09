@@ -1,6 +1,10 @@
+//////////DECLARATIVE
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 $text-main:       #CBC0CC;
+$text-secondary:  rgb(155, 123, 158);
+$soft-outline:    #CBC0CC70;
 $line:            #464044;
 $background-1:    #120D16;
 $background-trans:#09000899;
@@ -10,6 +14,17 @@ $background-trans:#09000899;
   border:     1px solid $text-main;
 }
 
+.container-x{
+  display: flex;
+}
+
+.container-y{
+  display: flex;
+  flex-direction: column;
+}
+
+//////////CENTER
+
 body{
   background:         #501346;
   background-image:     url(stars.png), linear-gradient(black, rgb(17, 36, 66), #501346);
@@ -17,7 +32,6 @@ body{
   background-size:      auto, cover;
   background-repeat:    repeat, no-repeat;
 }
-
 
 #main{
   max-width:        1000px;
@@ -54,20 +68,40 @@ article{
   }
 }
 
-.img-round{
-  border-radius: 100%;
-  width:         90%;
-  margin:        0px auto 16px auto;
-}
-
-.container-x{
-  display: flex;
-}
-
-.container-y{
+//////////ITEM-LISTS
+.item-list{
+  margin: 8px;
   display: flex;
   flex-direction: column;
 }
+
+.list-item{
+  margin:8px 8px 16px 8px;
+  padding:8px;
+  background: black;
+  border: 1px solid $soft-outline;
+}
+
+.list-title{
+  display: block;
+  font-size: 1.3em;
+  border-bottom: 1px solid $soft-outline;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.list-footer{
+  color: $text-secondary;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag{
+  margin-right: 4px;
+  font-size: 0.8em;
+}
+
+//////////NAV/SIDES
 
 .navbar{
   @include box;
@@ -88,6 +122,14 @@ article{
     text-align:   center;
   }
 }
+
+.img-round{
+  border-radius: 100%;
+  width:         90%;
+  margin:        0px auto 16px auto;
+}
+
+//////////SCROLLBAR
 
 /* width */
 ::-webkit-scrollbar {

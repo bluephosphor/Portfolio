@@ -1,6 +1,7 @@
 // Some small essentials. 
 const id = (id) => document.getElementById(id);
 const irandom_range = (min, max) => Math.floor(Math.random() * (max - min) ) + min;
+const url_slug = (text) => text.toLowerCase().replace(/[^\w ]+/g, '').replace(/ +/g, '-');
 
 // Keeping main site data in one place.
 const Site = {
@@ -15,6 +16,11 @@ const Site = {
     fetch(url)
     .then((r)=>{r.text()
     .then((d)=>{id(target).innerHTML = marked(d); console.log(d);})});
+  },
+  parse_tags: (arr) => {
+    let str = '';
+    arr.forEach(e => {str += `<span class="tag">#${e}</span>`});
+    return str;
   }
 }
 // Building the main navbar for every page.
