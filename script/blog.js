@@ -24,7 +24,7 @@ var RENDERED_LIST = '';
 Blog.posts.forEach(elem => {
     RENDERED_LIST += `
         <div class="list-item" id=${url_slug(elem.name)}>
-            <a class="list-title" onclick="Site.fetch_markdown(${PATH + elem.source}, 'content')">${elem.name}</a>
+            <a class="list-title" onclick="Site.fetch_markdown('${PATH + elem.source}', 'content')">${elem.name}</a>
             <div class="list-footer">
                 <span class="list-date"> Posted: ${elem.posted}</span>
                 <span class="list-tags">${Site.parse_tags(elem.tags)}</span>

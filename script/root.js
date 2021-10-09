@@ -15,7 +15,7 @@ const Site = {
   fetch_markdown: (url,target)=>{
     fetch(url)
     .then((r)=>{r.text()
-    .then((d)=>{id(target).innerHTML = marked(d); console.log(d);})});
+    .then((d)=>{id(target).innerHTML = marked(d)})});
   },
   parse_tags: (arr) => {
     let str = '';
