@@ -1,6 +1,5 @@
-const [LIST, ARTICLE, PATH]
- =    [0,    1,       "asset/md/blog/",];
-
+//defining our path and blog data
+const PATH = "asset/md/blog/";
 const Blog = {
     state: LIST,
     posts: [
@@ -19,8 +18,8 @@ const Blog = {
     ]
 }
 
+//getting our list html and saving it.
 var RENDERED_LIST = '';
-
 Blog.posts.forEach(elem => {
     RENDERED_LIST += `
         <div class="list-item" id=${url_slug(elem.name)}>

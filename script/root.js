@@ -4,6 +4,7 @@ const irandom_range = (min, max) => Math.floor(Math.random() * (max - min) ) + m
 const url_slug = (text) => text.toLowerCase().replace(/[^\w ]+/g, '').replace(/ +/g, '-');
 
 // Keeping main site data in one place.
+const [LIST, ARTICLE] = [0,1];
 const Site = {
   page:[
     {name: "Home",      url: "index.html"},
