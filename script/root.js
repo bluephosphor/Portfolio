@@ -14,7 +14,7 @@ const Site = {
     {name: "Template",  url: "template.html"},
     {name: "Test",      url: "pix.html"},
   ],
-  fetch_markdown: (url,target)=>{
+  fetch_markdown: (url, target) => {
     fetch(url)
     .then((r)=>{r.text()
     .then((d)=>{id(target).innerHTML = marked(d)})});
@@ -26,6 +26,6 @@ const Site = {
   }
 }
 // Building the main navbar for every page.
-id('nav-main').innerHTML += `<img class="img-round" src="asset/img/phosphora.png">`;
+id('nav-main').innerHTML += Elements.sidebar_img;
 
 Site.page.forEach(elem => id("nav-main").innerHTML += `<a href="${elem.url}">${elem.name}</a>`);
