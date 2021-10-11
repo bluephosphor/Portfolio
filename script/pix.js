@@ -1,4 +1,4 @@
-const app = new PIXI.Application({ transparent: true, width: 800, height: 600});
+const app = new PIXI.Application({ transparent: true, width: 640, height: 480});
 id('inner-body').appendChild(app.view);
 
 // create a new Sprite from an image path.
@@ -15,5 +15,5 @@ app.stage.addChild(niko);
 
 app.ticker.add(() => {
     // just for fun, let's rotate niko a little
-    niko.rotation += 0.1;
+    niko.rotation += 0.01;
 });

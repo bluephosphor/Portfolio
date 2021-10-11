@@ -12,6 +12,7 @@ const Site = {
     {name: "Blog",      url: "blog.html"},
     {name: "Notes",     url: ""},
     {name: "Template",  url: "template.html"},
+    {name: "Test",      url: "pix.html"},
   ],
   fetch_markdown: (url,target)=>{
     fetch(url)
