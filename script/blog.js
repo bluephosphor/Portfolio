@@ -18,7 +18,7 @@ const Blog = {
     ],
     show_article: (source) => {
         state = ARTICLE;
-        id('blog-posts').innerHTML = `<div class="back-button" onclick="Blog.show_list()"> << Back to list </div>`;
+        id('blog-posts').innerHTML = Elements.blog_back_button;
         Site.fetch_markdown(PATH + source, 'content');
     },
 
