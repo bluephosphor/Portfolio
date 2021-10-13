@@ -53,8 +53,14 @@ article img {
 }
 
 .back-button {
-  border: 1px solid white;
+  align-self: center;
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  border: 1px solid #CBC0CC70;
+  background: black;
   margin: 4px;
+  padding: 4px;
 }
 
 .item-list {

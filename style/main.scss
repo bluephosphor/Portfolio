@@ -69,8 +69,14 @@ article{
 }
 
 .back-button{
-  border: 1px solid white;
+  align-self: center;
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  border: 1px solid $soft-outline;
+  background: black;
   margin: 4px;
+  padding: 4px;
 }
 
 //////////ITEM-LISTS
@@ -81,8 +87,8 @@ article{
 }
 
 .list-item{
-  margin:8px 8px 16px 8px;
-  padding:8px;
+  margin: 8px 8px 16px 8px;
+  padding: 8px;
   background: black;
   border: 1px solid $soft-outline;
 }

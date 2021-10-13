@@ -10,10 +10,16 @@ const Blog = {
             tags:   ["gamedev","personal","gml"]
         },
         {
-            name:   "A Test Post", 
+            name:   "A test post", 
             source: "test.md", 
             posted: "1-1-75",
             tags:   ["some","fake","tags"]
+        },
+        {
+            name:   "Another test post", 
+            source: "test.md", 
+            posted: "2-10-95",
+            tags:   ["some","more","fake","tags"]
         },
     ],
     show_article: (source) => {
