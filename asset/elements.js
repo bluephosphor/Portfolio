@@ -50,7 +50,7 @@ function collapseSection(element) {
     });
     
     // mark the section as "currently collapsed"
-    element.setAttribute('data-opened', 'true');
+    element.setAttribute('data-opened', 'false');
 }
   
 function expandSection(element) {
@@ -66,9 +66,9 @@ function expandSection(element) {
       element.removeEventListener('transitionend', arguments.callee);
       
       // remove "height" from the element's inline styles, so it can return to its initial value
-      element.style.height = null;
+      element.style.height = element.scrollHeight;
     });
     
     // mark the section as "currently not collapsed"
-    element.setAttribute('data-opened', 'false');
+    element.setAttribute('data-opened', 'true');
 }

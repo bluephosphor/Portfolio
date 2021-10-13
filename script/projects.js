@@ -21,10 +21,9 @@ const Projects = {
         let is_opened = section.getAttribute('data-opened') === 'true';
       
         if(is_opened) {
-            expandSection(section);
-            section.setAttribute('data-opened', 'false');
-        } else {
             collapseSection(section);
+        } else {
+            expandSection(section);
         }
     }
 }
