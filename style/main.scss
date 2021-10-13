@@ -80,6 +80,7 @@ article{
 }
 
 //////////ITEM-LISTS
+
 .item-list{
   margin: 8px;
   display: flex;
@@ -110,6 +111,12 @@ article{
 .tag{
   margin-right: 4px;
   font-size: 0.8em;
+}
+
+.proj-content {
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+  height: auto;
 }
 
 //////////NAV/SIDES

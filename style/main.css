@@ -95,6 +95,12 @@ article img {
   font-size: 0.8em;
 }
 
+.proj-content {
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+  height: auto;
+}
+
 .navbar {
   background: #09000899;
   border: 1px solid #CBC0CC;
