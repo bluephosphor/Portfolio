@@ -1,4 +1,4 @@
-Technologies used: <span style="color:cyan">HTML</span> | <span style="color:red">SCSS</span> | <span style="color:yellow">JavaScript</span>
+## Technologies used: <span style="color:cyan">HTML</span> | <span style="color:red">SCSS</span> | <span style="color:yellow">JavaScript</span>
 
 [Source](https://github.com/bluephosphor/portfolio) 
 

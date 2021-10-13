@@ -11,7 +11,7 @@ const Projects = {
         },
         {
             name:   "Phosphora", 
-            source: "portfolio_site.md", 
+            source: "phosphora.md", 
             posted: "10-13-21",
             tags:   ["gml","glsl"]
         },
