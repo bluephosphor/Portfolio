@@ -51,6 +51,20 @@ article img {
   display: block;
   margin: auto;
 }
+article pre {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  overflow: auto;
+}
+
+.img-footer {
+  font-size: 0.8em;
+  background: #14181f;
+  color: #9b7b9e;
+  padding: 8px;
+  border-radius: 4px;
+}
 
 .back-button {
   align-self: center;

@@ -66,6 +66,20 @@ article{
     display:   block;
     margin:    auto;
   }
+  pre{
+    max-width: 100%;
+    display:   block;
+    margin:    auto;
+    overflow:  auto;
+  }
+}
+
+.img-footer{
+  font-size: 0.8em;
+  background: rgb(20, 24, 31);
+  color: $text-secondary;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 .back-button{

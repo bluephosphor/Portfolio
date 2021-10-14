@@ -19,7 +19,7 @@ Some key features:
         .then((d)=>{id(target_element).innerHTML = marked(d)})});
     },
     ```
-    ##### Note: The id() method shown here is just a shorthand method I use for `Document.getElementById().`
+    <div class="img-footer">Note: The id() method shown here is just a shorthand method I use for `Document.getElementById().`</div>
     
     Maybe this is a hacky solution, I'm not sure to be honest, but it worked well for my purposes, so I'm happy with it.
 
@@ -44,3 +44,4 @@ Some key features:
         }
     }   
     ```
+    <div class="img-footer">A poor person's React.`</div>

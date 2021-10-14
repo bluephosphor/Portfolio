@@ -1,4 +1,4 @@
-//defining our path and blog data
+//defining our path and project data
 const PATH = "asset/md/proj/";
 const Projects = {
     state: LIST,
@@ -22,8 +22,10 @@ const Projects = {
       
         if(is_opened) {
             collapseSection(section);
+            section.style.borderBottom = "none";
         } else {
             expandSection(section);
+            section.style.borderBottom = "1px solid #CBC0CC70";
         }
     }
 }
