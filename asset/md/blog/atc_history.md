@@ -1,7 +1,7 @@
-# Title section
+## Title section
 How I upgraded my mess of a game codebase into a global state system.
 
-```
+```gml
 #macro INGAME		0
 #macro PAUSE		1
 #macro INV			2
@@ -18,7 +18,7 @@ gamestate = INGAME;
 
 ---
 
-## part[1] = "DnD, but not with Dungeons or Dragons";
+### part[1] = "DnD, but not with Dungeons or Dragons";
 
 Game Maker was my introduction to the whole world of programming. Even as a little kid I have very fond memories of playing around with the Drag and Drop system of the now ancient Game Maker 5. Building all kinds of things ranging from a platformer where you roll around as a cheeseburger, and a fangame where you play as Mario, but he has a sniper rifle and you pick off Paragoombas as they cascade towards you. (Don't tell Nintendo)
 
@@ -59,7 +59,7 @@ I had no idea why the code I copied down worked, but hey, it did. and I was happ
 
 ---
 
-## part[2] = "No way, fuck this vertical croissant bullshit";
+### part[2] = "No way, fuck this vertical croissant bullshit";
 
 I ended up repeating this process several times throughout the early stages of development on this project.
 	
@@ -83,7 +83,7 @@ Here, I'll show you:
 
 Here is a block of DnD logic. Now I'm gonna write this up in GML right quick:
 
-```
+```gml
 if (instance_exists(obj_player)){
 	direction = point_direction(obj_player.x,obj_player.y);
 	speed = spd;
@@ -118,12 +118,12 @@ So needless to day, I was quickly converted into a GML person, and would use the
 
 ---
 
-# part[3] = A game about a forest.
+### part[3] = A game about a forest.
 
 TBC.
 
 ---
 
-# part [4] = Real Talk.
+### part [4] = Real Talk.
 
 TBC.

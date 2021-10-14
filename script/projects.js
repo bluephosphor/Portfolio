@@ -23,10 +23,12 @@ const Projects = {
       
         if(is_opened) {
             collapseSection(section);
+            id('nav-secondary').innerHTML = "";
             section.style.borderBottom = "none";
             icon.innerHTML = "[+]";
         } else {
             expandSection(section);
+            Site.generate_article_nav(section);
             section.style.borderBottom = "1px solid #CBC0CC70";
             icon.innerHTML = "[-]";
         }
@@ -37,5 +39,3 @@ const Projects = {
 var RENDERED_LIST = '';
 Projects.posts.forEach(elem => {RENDERED_LIST += Elements.proj_list_item(elem)});
 id("posts").innerHTML = RENDERED_LIST;
-
-

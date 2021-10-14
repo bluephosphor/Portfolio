@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "proj/portfolio_site.md",
+            "file": "blog/atc_history.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "proj/portfolio_site.md",
+            "file": "blog/atc_history.md",
             "mode": "preview"
           }
         },
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "proj/portfolio_site.md",
+                "file": "blog/atc_history.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,9 +101,9 @@
   },
   "active": "477dc35e95210390",
   "lastOpenFiles": [
+    "blog/atc_history.md",
     "proj/portfolio_site.md",
     "proj/phosphora.md",
-    "blog/test.md",
-    "blog/atc_history.md"
+    "blog/test.md"
   ]
 }

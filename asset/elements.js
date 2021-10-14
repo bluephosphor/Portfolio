@@ -23,8 +23,7 @@ const Elements = {
                             return `
                             <div class="list-item" id=${name}>
                                 <a  class="list-title" 
-                                    onclick="Projects.open_post('${obj.name}')"
-                                    >
+                                    onclick="Projects.open_post('${obj.name}')">
                                     ${obj.name}
                                     <span class="expand-icon" id=${name + '-icon'}>[+]</span>
                                 </a>
