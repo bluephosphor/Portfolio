@@ -15,6 +15,14 @@ const Site = {
     {name: "Template",  url: "template.html"},
     {name: "Test",      url: "p5.html"},
   ],
+
+  contact:[
+    {name: "Twitter",   url:"https://twitter.com/toonlinks",              icon: ""},
+    {name: "LinkedIn",  url:"https://www.linkedin.com/in/bluephosphor/",  icon: ""},
+    {name: "GitHub",    url:"https://github.com/bluephosphor",            icon: ""},
+    {name: "itch",      url:"https://okboy.itch.io/",                     icon: ""},
+    {name: "Bandcamp",  url:"https://bluephosphor.bandcamp.com/",         icon: ""},
+  ],
   
   fetch_markdown: (url, target) => {
     fetch(url)
@@ -25,46 +33,19 @@ const Site = {
     })});
   },
   
-  parse_tags: arr => {
-    let [str, mod, hash] = ['','',''];
-    arr.forEach(e => {
-      switch(e){
-        case 'html':        mod  = ' style="color: cyan;"';     break;
-        case 'css':         mod  = ' style="color: pink;"';     break;
-        case 'scss':        mod  = ' style="color: red;"';      break;
-        case 'javascript':  mod  = ' style="color: yellow;"';   break;
-        case 'gml':         mod  = ' style="color: green;"';    break;
-        case 'glsl':        mod  = ' style="color: gray;"';     break;
-        default:            hash = '#';                         break;
-      }
-      str += `<a class="tag"${mod}>${hash}${e}</a>`;
-    });
-    return str;
-  },
-  
   show_article: (source) => {
     state = ARTICLE;
     id('posts').innerHTML = Elements.back_button;
     Site.fetch_markdown(PATH + source, 'content');
-    delay(100).then(() => Site.generate_article_nav(id('content')));
+    delay(100).then(() => Elements.article_nav(id('content')));
   },
   
   show_list: () => {
-      state = LIST;
-      id('content').innerHTML = "";
-      id('nav-secondary').innerHTML = "";
-      id('posts').innerHTML = RENDERED_LIST;
+    state = LIST;
+    id('content').innerHTML = "";
+    id('nav-secondary').innerHTML = "";
+    id('posts').innerHTML = RENDERED_LIST;
   },
-  
-  generate_article_nav: (article) =>{
-    let target  = id('nav-secondary');
-    let list    = article.querySelectorAll("h2,h3,h4,h5");
-
-    target.innerHTML = `<h3>Article nav:</h3>`
-    list.forEach(elem => target.innerHTML += `<a href="#${elem.id}">${elem.innerText}</a>`);
-  }
 }
 // Building the main navbar for every page.
-id('nav-main').innerHTML += Elements.sidebar_img;
-
-Site.page.forEach(elem => id("nav-main").innerHTML += `<a href="${elem.url}">${elem.name}</a>`);
+Elements.navigation();

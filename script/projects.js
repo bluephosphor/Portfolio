@@ -22,13 +22,13 @@ const Projects = {
         let is_opened   = section.getAttribute('data-opened') === 'true';
       
         if(is_opened) {
-            collapseSection(section);
+            collapse_section(section);
             id('nav-secondary').innerHTML = "";
             section.style.borderBottom = "none";
             icon.innerHTML = "[+]";
         } else {
-            expandSection(section);
-            Site.generate_article_nav(section);
+            expand_section(section);
+            Elements.article_nav(section);
             section.style.borderBottom = "1px solid #CBC0CC70";
             icon.innerHTML = "[-]";
         }
