@@ -30,7 +30,7 @@ const Elements = {
                                 </a>
                                 <article class="proj-content" id=${content_id}>${Site.fetch_markdown(path + obj.source, content_id)}</article>
                                 <div class="list-footer">
-                                    <span class="list-date"> Posted: ${obj.posted}</span>
+                                    <span class="list-date">${obj.posted}</span>
                                     <span class="list-tags">${Site.parse_tags(obj.tags)}</span>
                                 </div>
                             </div>`;

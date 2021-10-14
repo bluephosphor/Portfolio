@@ -6,13 +6,13 @@ const Projects = {
         {
             name:   "Portfolio Site", 
             source: "portfolio_site.md", 
-            posted: "10-13-21",
+            posted: "October 2021 - Current",
             tags:   ["html","scss","javascript"]
         },
         {
             name:   "Phosphora", 
             source: "phosphora.md", 
-            posted: "10-13-21",
+            posted: "January 2020 - Current",
             tags:   ["gml","glsl"]
         },
     ],

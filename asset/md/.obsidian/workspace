@@ -1,0 +1,109 @@
+{
+  "main": {
+    "id": "d01672810bdb7ac0",
+    "type": "split",
+    "children": [
+      {
+        "id": "477dc35e95210390",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "proj/portfolio_site.md",
+            "mode": "source"
+          }
+        },
+        "group": "b735e241ab48cd8b"
+      },
+      {
+        "id": "9a0762259aa180fd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "proj/portfolio_site.md",
+            "mode": "preview"
+          }
+        },
+        "group": "b735e241ab48cd8b"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3cc273731cf9301b",
+    "type": "split",
+    "children": [
+      {
+        "id": "8df2cf744c54b881",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "173309a57380297c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "93eb2032418ff5eb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 196
+  },
+  "right": {
+    "id": "3a751aa5a66114d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d6a4ee3a1a63999",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ff5688789a2acd3c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "proj/portfolio_site.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "477dc35e95210390",
+  "lastOpenFiles": [
+    "proj/portfolio_site.md",
+    "proj/phosphora.md",
+    "blog/test.md",
+    "blog/atc_history.md"
+  ]
+}
