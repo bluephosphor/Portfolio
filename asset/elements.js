@@ -22,7 +22,12 @@ const Elements = {
                             let content_id = name + '-content';
                             return `
                             <div class="list-item" id=${name}>
-                                <a class="list-title" onclick="Projects.open_post('${obj.name}')">${obj.name}</a>
+                                <a  class="list-title" 
+                                    onclick="Projects.open_post('${obj.name}')"
+                                    >
+                                    ${obj.name}
+                                    <span class="expand-icon" id=${name + '-icon'}>[+]</span>
+                                </a>
                                 <article class="proj-content" id=${content_id}>${Site.fetch_markdown(path + obj.source, content_id)}</article>
                                 <div class="list-footer">
                                     <span class="list-date"> Posted: ${obj.posted}</span>

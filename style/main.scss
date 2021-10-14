@@ -1,13 +1,15 @@
 //////////DECLARATIVE
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 
 $text-main:       #CBC0CC;
 $text-secondary:  rgb(155, 123, 158);
+$code-gray:       #CBC0CC;
 $soft-outline:    #CBC0CC70;
 $line:            #464044;
 $background-1:    #120D16;
 $background-trans:#09000899;
+$block-bg:        rgb(20, 24, 31);
 
 @mixin box {
   background: $background-trans;
@@ -36,7 +38,7 @@ body{
 #main{
   max-width:        1000px;
   margin:           auto;
-  font-family:      'Rubik', sans-serif;
+  font-family:      'Assistant', sans-serif;
   color:            $text-main;
   height:           97vh;
   justify-content:  space-between;
@@ -61,6 +63,13 @@ body{
 article{
   padding:    0px 16px 8px 16px;
   text-align: justify;
+  h1,h2,h3,h4,h5{
+    display: block;
+    background: $block-bg;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+  }
   img{
     max-width: 100%;
     display:   block;
@@ -71,13 +80,29 @@ article{
     display:   block;
     margin:    auto;
     overflow:  auto;
+    padding: 4px;
+    border: 1px solid $soft-outline;
+    border-radius: 2px;
+  }
+  code{
+    background:black;
+    padding:2px;
+    color: $code-gray;
+  }
+  .source-link{
+    font-family: monospace;
+    color: gray;
+    text-align: center;
+    display: block;
   }
 }
 
 .img-footer{
+  max-width: 75%;
+  text-align: left;
+  margin: 8px auto auto auto;
   font-size: 0.8em;
-  background: rgb(20, 24, 31);
-  color: $text-secondary;
+  background: $block_bg;
   padding: 8px;
   border-radius: 4px;
 }
@@ -116,15 +141,23 @@ article{
   margin-bottom: 8px;
 }
 
+.expand-icon{
+  color: gray;
+  font-family: monospace;
+  font-size: 0.8em;
+}
+
 .list-footer{
   color: $text-secondary;
   display: flex;
+  padding-top: 4px;
   justify-content: space-between;
+  font-family: monospace;
 }
 
 .tag{
   margin-right: 4px;
-  font-size: 0.8em;
+  font-family: monospace;
 }
 
 .proj-content {
@@ -165,7 +198,8 @@ article{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+    width: 12px;
+    height: 12px;
 }
 
 /* Track */

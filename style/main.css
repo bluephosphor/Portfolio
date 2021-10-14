@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
 .container-x {
   display: flex;
 }
@@ -19,7 +19,7 @@ body {
 #main {
   max-width: 1000px;
   margin: auto;
-  font-family: "Rubik", sans-serif;
+  font-family: "Assistant", sans-serif;
   color: #CBC0CC;
   height: 97vh;
   justify-content: space-between;
@@ -46,6 +46,13 @@ article {
   padding: 0px 16px 8px 16px;
   text-align: justify;
 }
+article h1, article h2, article h3, article h4, article h5 {
+  display: block;
+  background: #14181f;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+}
 article img {
   max-width: 100%;
   display: block;
@@ -56,12 +63,28 @@ article pre {
   display: block;
   margin: auto;
   overflow: auto;
+  padding: 4px;
+  border: 1px solid #CBC0CC70;
+  border-radius: 2px;
+}
+article code {
+  background: black;
+  padding: 2px;
+  color: #CBC0CC;
+}
+article .source-link {
+  font-family: monospace;
+  color: gray;
+  text-align: center;
+  display: block;
 }
 
 .img-footer {
+  max-width: 75%;
+  text-align: left;
+  margin: 8px auto auto auto;
   font-size: 0.8em;
   background: #14181f;
-  color: #9b7b9e;
   padding: 8px;
   border-radius: 4px;
 }
@@ -98,15 +121,23 @@ article pre {
   margin-bottom: 8px;
 }
 
+.expand-icon {
+  color: gray;
+  font-family: monospace;
+  font-size: 0.8em;
+}
+
 .list-footer {
   color: #9b7b9e;
   display: flex;
+  padding-top: 4px;
   justify-content: space-between;
+  font-family: monospace;
 }
 
 .tag {
   margin-right: 4px;
-  font-size: 0.8em;
+  font-family: monospace;
 }
 
 .proj-content {
@@ -145,6 +176,7 @@ article pre {
 /* width */
 ::-webkit-scrollbar {
   width: 12px;
+  height: 12px;
 }
 
 /* Track */
