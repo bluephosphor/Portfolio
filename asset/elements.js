@@ -3,6 +3,8 @@
 const Elements = {
     sidebar_img:        '<img class="img-round" src="asset/img/phosphora.png">',
 
+    sidebar_img_2:      `<img class="img-round" src="asset/img/fallshrubbie.png">`,
+
     back_button:        '<a class="back-button" onclick="Site.show_list()"> << Back to list << </a>',
 
     navigation:         () => {
@@ -10,7 +12,18 @@ const Elements = {
 
                             Site.page.forEach(elem => id("nav-main").innerHTML += `<a href="${elem.url}">${elem.name}</a>`);
                         },
-
+    
+    contact:            () => {
+                            id('nav-secondary').innerHTML = Elements.sidebar_img_2;
+                            
+                            Site.contact.forEach(elem => {
+                              id("nav-secondary").innerHTML += 
+                              `<div class="link-section">
+                                  <a class="link-icon" target="_blank" href="${elem.url}">${elem.icon}</a>
+                                  <span class="link-name">${elem.name}</span>
+                               </div>`;
+                            })
+                        },                      
     article_nav:        article =>{
                             let target  = id('nav-secondary');
                             let list    = article.querySelectorAll("h2,h3,h4,h5");

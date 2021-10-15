@@ -17,11 +17,11 @@ const Site = {
   ],
 
   contact:[
-    {name: "Twitter",   url:"https://twitter.com/toonlinks",              icon: ""},
-    {name: "LinkedIn",  url:"https://www.linkedin.com/in/bluephosphor/",  icon: ""},
-    {name: "GitHub",    url:"https://github.com/bluephosphor",            icon: ""},
-    {name: "itch",      url:"https://okboy.itch.io/",                     icon: ""},
-    {name: "Bandcamp",  url:"https://bluephosphor.bandcamp.com/",         icon: ""},
+    {name: "Twitter",   url:"https://twitter.com/toonlinks",              icon: `<i class="fab fa-twitter"></i>`},
+    {name: "LinkedIn",  url:"https://www.linkedin.com/in/bluephosphor/",  icon: `<i class="fab fa-linkedin"></i>`},
+    {name: "GitHub",    url:"https://github.com/bluephosphor",            icon: `<i class="fab fa-github"></i>`},
+    {name: "Itch",      url:"https://okboy.itch.io/",                     icon: `<i class="fab fa-itch-io"></i>`},
+    {name: "Bandcamp",  url:"https://bluephosphor.bandcamp.com/",         icon: `<i class="fab fa-bandcamp"></i>`},
   ],
   
   fetch_markdown: (url, target) => {
@@ -43,9 +43,10 @@ const Site = {
   show_list: () => {
     state = LIST;
     id('content').innerHTML = "";
-    id('nav-secondary').innerHTML = "";
+    Elements.contact();
     id('posts').innerHTML = RENDERED_LIST;
   },
 }
-// Building the main navbar for every page.
+// Building the main navbars for every page.
 Elements.navigation();
+Elements.contact();

@@ -163,6 +163,25 @@ article .source-link {
   padding-top: 8px;
   border-top: 1px solid #464044;
 }
+.navbar .link-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+  padding-top: 0px;
+  border-top: 1px solid #464044;
+}
+.navbar .link-section .link-icon {
+  flex-basis: 40px;
+}
+.navbar .link-section a {
+  border-top: none;
+}
+.navbar .link-section i {
+  font-size: 2em;
+  margin: none;
+  padding: none;
+}
 .navbar p, .navbar h1, .navbar h2, .navbar h3, .navbar h4, .navbar h5 {
   text-align: center;
 }
@@ -170,7 +189,7 @@ article .source-link {
 .img-round {
   border-radius: 100%;
   width: 90%;
-  margin: 0px auto 16px auto;
+  margin: 16px auto;
 }
 
 /* width */

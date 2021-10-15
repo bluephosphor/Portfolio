@@ -9,23 +9,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "blog/atc_history.md",
+            "file": "proj/phosphora.md",
             "mode": "source"
           }
         },
-        "group": "b735e241ab48cd8b"
+        "group": "24033dd594280945"
       },
       {
-        "id": "9a0762259aa180fd",
+        "id": "21cb69b0edcec419",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "blog/atc_history.md",
+            "file": "proj/phosphora.md",
             "mode": "preview"
           }
         },
-        "group": "b735e241ab48cd8b"
+        "group": "24033dd594280945"
       }
     ],
     "direction": "vertical"
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/atc_history.md",
+                "file": "proj/phosphora.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,9 +101,9 @@
   },
   "active": "477dc35e95210390",
   "lastOpenFiles": [
-    "blog/atc_history.md",
-    "proj/portfolio_site.md",
     "proj/phosphora.md",
+    "proj/portfolio_site.md",
+    "blog/atc_history.md",
     "blog/test.md"
   ]
 }

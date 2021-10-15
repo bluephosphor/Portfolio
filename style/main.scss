@@ -183,6 +183,26 @@ article{
     padding-top:  8px;
     border-top:   1px solid $line;
   }
+  .link-section{
+    display:         flex;
+    justify-content: flex-start;
+    align-items:     center;
+    margin:          0px;
+    padding-top:     0px;
+    border-top:      1px solid $line;
+    .link-icon{
+      flex-basis: 40px;
+    }
+    a{
+      border-top:    none;
+    }
+    i{
+      font-size:     2em;
+      margin:        none;
+      padding:       none;
+    }
+  }
+  
   p,h1,h2,h3,h4,h5{
     text-align:   center;
   }
@@ -191,7 +211,7 @@ article{
 .img-round{
   border-radius: 100%;
   width:         90%;
-  margin:        0px auto 16px auto;
+  margin:        16px auto;
 }
 
 //////////SCROLLBAR

@@ -23,7 +23,7 @@ const Projects = {
       
         if(is_opened) {
             collapse_section(section);
-            id('nav-secondary').innerHTML = "";
+            Elements.contact();
             section.style.borderBottom = "none";
             icon.innerHTML = "[+]";
         } else {

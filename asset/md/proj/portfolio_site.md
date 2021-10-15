@@ -15,8 +15,8 @@ Using the JavaScript Fetch API, I was able to load .md files dynamically in the 
 ```javascript
 fetch_markdown = (markdown_url, target_element) => {
     fetch(target_url)
-    .then((r)=>{r.text()
-    .then((d)=>{id(target_element).innerHTML = marked(d)})});
+    .then((response)=>{response.text()
+    .then((data)=>{id(target_element).innerHTML = marked(data)})});
 },
 ```
 <div class="img-footer">Note: The id() method shown here is just a shorthand method I use for <code>Document.getElementById()</code>.</div>
@@ -30,20 +30,25 @@ Using nice modern features such as string template literals, it's quite easy to 
 ``` javascript
 const Elements = {
     // ...
-    proj_list_item: (obj) => { 
-        let path = "asset/md/proj/";
-        let name = url_slug(obj.name);
-        let content_id = name + '-content';
-        return `
-        <div class="list-item" id=${name}>
-            <a class="list-title" onclick="Projects.open_post('${obj.name}')">${obj.name}</a>
-            <article class="proj-content" id=${content_id}>${Site.fetch_markdown(path + obj.source, content_id)}</article>
-            <div class="list-footer">
-                <span class="list-date"> Posted: ${obj.posted}</span>
-                <span class="list-tags">${Site.parse_tags(obj.tags)}</span>
-            </div>
-        </div>`;
-    }
-}   
+    proj_list_item: obj => {
+		let path = "asset/md/proj/";
+		let name = url_slug(obj.name);
+		let content_id = name + '-content';
+		return `
+			<div class="list-item" id=${name}>
+				<a class="list-title" onclick="Projects.open_post('${obj.name}')">
+					${obj.name}
+					<span class="expand-icon" id=${name + '-icon'}>[+]</span>
+				</a>
+				<article class="proj-content" id=${content_id}>
+					${Site.fetch_markdown(path + obj.source, content_id)}
+				</article>
+					<div class="list-footer">
+					<span class="list-date">${obj.posted}</span>
+					<span class="list-tags">${Elements.tags_list(obj.tags)}</span>
+				</div>
+			</div>`;
+	}
+}
 ```
-<div class="img-footer">A poor person's React.</div>
+<div class="img-footer">This function is what generates each project section for this page, such as the one you're reading now!</div>
