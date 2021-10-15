@@ -5,8 +5,8 @@ function generate_paras(num, sentence_min, sentence_max, tag){
     while (i < num){
         str += `<${tag}>`; 
         j = 0; while (j < irandom_range(sentence_min, sentence_max)){
-        str += words[irandom_range(0,words.length)] + " ";
-        j++;
+            str += words[irandom_range(0,words.length)] + " ";
+            j++;
         }
         str += `</${tag[0]}>`;
         i++;
@@ -16,4 +16,3 @@ function generate_paras(num, sentence_min, sentence_max, tag){
 }
 
 id("content").innerHTML        = generate_paras(20, 30, 200, "p");
-id("nav-secondary").innerHTML += generate_paras(10, 1, 3, "a href=''"); 
