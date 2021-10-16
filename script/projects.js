@@ -7,13 +7,31 @@ const Projects = {
             name:   "Portfolio Site", 
             source: "portfolio_site.md", 
             posted: "October 2021 - Current",
-            tags:   ["html","scss","javascript"]
+            tags:   ["web-dev","html","scss","javascript"]
+        },
+        {
+            name:   "25 + 5 Clock", 
+            source: "255clock.md", 
+            posted: "October 2021",
+            tags:   ["web-dev","html","css","javascript"]
+        },
+        {
+            name:   "React Calculator", 
+            source: "calculator.md", 
+            posted: "October 2021",
+            tags:   ["web-dev","html","css","react"]
+        },
+        {
+            name:   "Live Markdown Previewer", 
+            source: "mdpreview.md", 
+            posted: "October 2021",
+            tags:   ["web-dev","html","css","react"]
         },
         {
             name:   "Phosphora", 
             source: "phosphora.md", 
             posted: "January 2020 - Current",
-            tags:   ["gml","glsl"]
+            tags:   ["game-dev","gml","glsl"]
         },
     ],
     open_post: name => {

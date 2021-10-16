@@ -1,0 +1,112 @@
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&family=Major+Mono+Display&display=swap');
+        body{
+            background:black;
+            color:white;
+        }
+        button{
+            background: black;
+            color:white;
+            border: 3px solid white;
+            border-radius: 6px;
+            font-family: 'Bellota Text', cursive;
+            font-size: 20px;
+            margin: 5px;
+        }
+        button:hover{
+            color:black;
+            background:white;
+        }
+
+        #time-left {
+            font-size: 15vw;
+            font-family: 'Major Mono Display', monospace;
+        }
+        #timer-label{
+            font-family: 'Bellota Text', cursive;
+            font-size: 5vw;
+        }
+        #session-label,
+        #break-label{
+            margin: 16px;
+            padding: 5px;
+            border: 3px solid white;
+            border-radius: 7px;
+        }
+
+        i{margin:8px; border-radius:100%}
+        i:hover{background: #555}
+
+        #controls-container{
+            font-size: 30px;
+            font-family: 'Bellota Text', cursive;
+        }
+
+        @media screen and (max-width: 600px) {
+        #controls-container{
+            flex-direction:column;
+            width: 90vw;
+        }
+        #time-left {
+            font-size: 25vw;
+            font-family: 'Major Mono Display', monospace;
+        }
+        #timer-label{
+            font-family: 'Bellota Text', cursive;
+            font-size: 7vw;
+        }
+        button{
+            margin:16px;
+            padding:8px;
+        }
+        i{
+            font-size:10vw;
+        }
+        }
+
+        .container-y{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container-x{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/163e46604a.js" crossorigin="anonymous"></script>
+    <audio id="beep" src="https://nikotheghost.neocities.org/beep.wav" type ="audio/wav" volume="75"></audio>
+    <div class="container-y">
+        <div class="container-x" id="controls-container">
+            <div class="container-y" id="session-label">
+            <span>Session Length</span>
+            <div class="container-x">
+                <i id="session-increment" class="far fa-arrow-alt-circle-up"
+                onclick="timeAdjust(1,'session-length')"></i>
+                <span id=session-length>25</span>
+                <i id="session-decrement" class="far fa-arrow-alt-circle-down"
+                onclick="timeAdjust(-1,'session-length')"></i>
+            </div>
+            </div>
+            <div class="container-y" id="break-label">
+            <span>Break Length</span>
+            <div class="container-x">
+                <i id="break-increment" class="far fa-arrow-alt-circle-up"
+                onclick="timeAdjust(1,'break-length')"></i>
+                <span id=break-length>5</span>
+                <i id="break-decrement" class="far fa-arrow-alt-circle-down"
+                onclick="timeAdjust(-1,'break-length')"></i>
+            </div>
+            </div>
+        </div>
+        <span id="timer-label">Session:</span>
+        <span id="time-left"></span>
+        <div class="container-x" id="timer-controls-container">
+            <button id="start_stop" onclick="startPause()">Start/Pause</button>
+            <button id="reset" onclick="init()">Reset</button>
+        </div>
+    </div>
+    <script src="255clock.js"></script>
+</body>

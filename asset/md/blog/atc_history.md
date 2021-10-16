@@ -1,23 +1,3 @@
-## Title section
-How I upgraded my mess of a game codebase into a global state system.
-
-```gml
-#macro INGAME		0
-#macro PAUSE		1
-#macro INV			2
-#macro DIALOGUE 	3
-#macro SHELL		4
-#macro FISHING		5
-#macro TRANSITION 	6
-#macro CUTSCENE 	7
-
-globalvar gamestate;
-gamestate = INGAME;
-
-```
-
----
-
 ### part[1] = "DnD, but not with Dungeons or Dragons";
 
 Game Maker was my introduction to the whole world of programming. Even as a little kid I have very fond memories of playing around with the Drag and Drop system of the now ancient Game Maker 5. Building all kinds of things ranging from a platformer where you roll around as a cheeseburger, and a fangame where you play as Mario, but he has a sniper rifle and you pick off Paragoombas as they cascade towards you. (Don't tell Nintendo)

@@ -89,12 +89,26 @@ article{
     padding:2px;
     color: $code-gray;
   }
+  .subheader{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.3em;
+    color: $text-secondary;
+  }
   .source-link{
     font-family: monospace;
     color: gray;
     text-align: center;
     display: block;
   }
+}
+
+iframe{
+  margin: auto;
+  align-self: center;
+  border: none;
+  width: 100%;
 }
 
 .img-footer{

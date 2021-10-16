@@ -9,18 +9,6 @@ const Blog = {
             posted: "10-8-21",
             tags:   ["gamedev","personal","game maker"]
         },
-        {
-            name:   "A test post", 
-            source: "test.md", 
-            posted: "1-1-75",
-            tags:   ["some","fake","tags"]
-        },
-        {
-            name:   "Another test post", 
-            source: "test.md", 
-            posted: "2-10-95",
-            tags:   ["some","more","fake","tags"]
-        },
     ],
 }
 

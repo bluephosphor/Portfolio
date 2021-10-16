@@ -11,9 +11,6 @@ const Site = {
     {name: "Home",      url: "index.html"},
     {name: "Projects",  url: "projects.html"},
     {name: "Blog",      url: "blog.html"},
-    {name: "Notes",     url: ""},
-    {name: "Template",  url: "template.html"},
-    {name: "Test",      url: "p5.html"},
   ],
 
   contact:[

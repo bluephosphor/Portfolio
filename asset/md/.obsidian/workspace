@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "proj/phosphora.md",
+            "file": "proj/255clock.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "proj/phosphora.md",
+            "file": "proj/255clock.md",
             "mode": "preview"
           }
         },
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "proj/phosphora.md",
+                "file": "proj/255clock.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,9 +101,13 @@
   },
   "active": "477dc35e95210390",
   "lastOpenFiles": [
-    "proj/phosphora.md",
+    "proj/255clock.md",
+    "proj/calculator.md",
+    "proj/mdpreview.md",
     "proj/portfolio_site.md",
     "blog/atc_history.md",
+    "proj/phosphora.md",
+    "proj/Untitled.md",
     "blog/test.md"
   ]
 }
