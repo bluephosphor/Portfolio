@@ -10,6 +10,7 @@
             }
             hr{
                 width: 100%;
+                color: rgb(46, 89, 117);
             }
             h1,h2,h3,h4,h5{
                 font-style: italic;
@@ -34,16 +35,20 @@
                 background: #EEE;
                 padding:2px;
             }
+            .skill-list{
+                display:flex;
+                flex-direction: column;
+            }
             .subskill{
-                display: block;
-                margin:-16px 0px;
-                color: #788;
+                color: #666;
+                margin-top: -14px;
+                margin-left: 16px;
             }
             #header{
                 background: rgb(46, 89, 117);
                 color: #FFF;
                 display: flex;
-                flex-direction:column;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 font-size: 2em;
@@ -52,8 +57,6 @@
                 border:1px solid white;
                 margin-top:16px;
                 padding: 0px 16px;
-                
-
             }
             #main{
                 padding:16px;
@@ -86,7 +89,7 @@
                     <hr>
                     <section id="work-history">
                         <h2>Work History</h2>
-                        <h3>Our Lady Chapel at Gilmour Academy</h3>
+                        <h3>Our Lady Chapel at Gilmour Academy - Technical Assistant</h3>
                         <div class="sub-container">
                             <span class="location">Gates Mills, Ohio</span><br>
                             <span class="date">October 2019 - Current</span>
@@ -98,7 +101,7 @@
                             <li>Volunteered to help with special projects of varying degrees of complexity.</li>
                         </ul>
 
-                        <h3>Starbucks</h3>
+                        <h3>Starbucks - Barista</h3>
                         <div class="sub-container">
                             <span class="location">Rocky River, Ohio</span><br>
                             <span class="date">September 2017 - Current</span>
@@ -134,15 +137,17 @@
                         <ul>
                             <li>Responsive Web Design</li>
                             <li>Front-End-Skills:
-                                <span class="subskill">HTML</span>
-                                <span class="subskill">CSS</span>
-                                <span class="subskill">JavaScript</span>
-                                <br>
+                                <div class="skill-list">
+                                    <span class="subskill">HTML</span>
+                                    <span class="subskill">CSS</span>
+                                    <span class="subskill">JavaScript</span>
+                                </div>
                             </li>
                             <li>JavaScript Libraries and Frameworks:
-                                <span class="subskill">React</span>
-                                <span class="subskill">jQuery</span>
-                                <br>
+                                <div class="skill-list">
+                                    <span class="subskill">React</span>
+                                    <span class="subskill">jQuery</span>
+                                </div>
                             </li>
                             <li>Avid Learner</li>
                             <li>Reference research</li>
