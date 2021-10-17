@@ -14,6 +14,11 @@
             h1,h2,h3,h4,h5{
                 font-style: italic;
             }
+            i{
+                color: rgb(46, 89, 117);
+                font-size: 1.5em;
+                justify-self: center;
+            }
             .date{
                 font-style: italic;
                 color:#788;
@@ -28,6 +33,11 @@
             .sub-container{
                 background: #EEE;
                 padding:2px;
+            }
+            .subskill{
+                display: block;
+                margin:-16px 0px;
+                color: #788;
             }
             #header{
                 background: rgb(46, 89, 117);
@@ -47,15 +57,21 @@
             }
             #main{
                 padding:16px;
-                width:80%
+                width:70%
             }
             #sidebar{
                 background:#EEE;
                 padding: 16px;
             }
+            #contact{
+                display: grid;
+                grid-template-columns: 40px auto;
+                grid-template-rows: 32px 32px 32px;
+            }
         </style>
     </head>
     <body>
+        <script src="https://kit.fontawesome.com/163e46604a.js" crossorigin="anonymous"></script>
         <div class="container-y">
             <section id="header">
                 <div id="header-logo">JA</div>
@@ -101,9 +117,9 @@
                 </div>
                 <div class="container-y" id="sidebar">
                     <section id="contact">
-                        <div class="contact-line">bow682@gmail.com</div>
-                        <div class="contact-line">(419) 577-3467</div>
-                        <div class="contact-line">Lakewood, OH 44107</div>
+                        <i class="fas fa-at"></i>            <span>bow682@gmail.com</span>
+                        <i class="fas fa-phone"></i>         <span>(419) 577-3467</span>
+                        <i class="fas fa-map-marker-alt"></i><span>Lakewood, OH 44107</span>
                     </section>
                     <hr>
                     <section id="portfolio">
@@ -116,10 +132,19 @@
                     <section id="skills">
                         <h3>Skills</h3>
                         <ul>
-                            <li>Avid Learner</li>
                             <li>Responsive Web Design</li>
-                            <li>Front-End-Skills:<br>HTML, CSS, JavaScript</li>
-                            <li>JavaScript Libraries and Frameworks:<br>React, jQuery</li>
+                            <li>Front-End-Skills:
+                                <span class="subskill">HTML</span>
+                                <span class="subskill">CSS</span>
+                                <span class="subskill">JavaScript</span>
+                                <br>
+                            </li>
+                            <li>JavaScript Libraries and Frameworks:
+                                <span class="subskill">React</span>
+                                <span class="subskill">jQuery</span>
+                                <br>
+                            </li>
+                            <li>Avid Learner</li>
                             <li>Reference research</li>
                             <li>Customer or student assistance</li>
                             <li>Media and recording options</li>
@@ -132,17 +157,23 @@
                         <h3>Certifications</h3>
                         <ul>
                             <li>
-                                <a class="cert-link" href="" target="_blank">Responsive Web Design</a>
+                                <a class="cert-link" 
+                                   href="https://www.freecodecamp.org/certification/bluephosphor/responsive-web-design" 
+                                   target="_blank">Responsive Web Design</a>
                                 <br>
                                 <span class="location">FreeCodeCamp, </span><span class="date">Sep 3, 2021</span>
                             </li>
                             <li>
-                                <a class="cert-link" href="" target="_blank">JavaScript Algorithms and Data Structures</a>
+                                <a class="cert-link" 
+                                   href="https://www.freecodecamp.org/certification/bluephosphor/javascript-algorithms-and-data-structures" 
+                                   target="_blank">JavaScript Algorithms and Data Structures</a>
                                 <br>
                                 <span class="location">FreeCodeCamp, </span><span class="date">Sep 17, 2021</span>
                             </li>
                             <li>
-                                <a class="cert-link" href="" target="_blank">Front End Development Libraries</a>
+                                <a class="cert-link" 
+                                   href="https://www.freecodecamp.org/certification/bluephosphor/front-end-development-libraries" 
+                                   target="_blank">Front End Development Libraries</a>
                                 <br>
                                 <span class="location">FreeCodeCamp, </span><span class="date">Oct 6, 2021</span>
                             </li>
