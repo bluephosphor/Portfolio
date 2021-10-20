@@ -6,10 +6,11 @@
       {
         "id": "477dc35e95210390",
         "type": "leaf",
+        "dimension": 40.2027027027027,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "proj/255clock.md",
+            "file": "proj/calculator.md",
             "mode": "source"
           }
         },
@@ -18,10 +19,11 @@
       {
         "id": "21cb69b0edcec419",
         "type": "leaf",
+        "dimension": 59.797297297297305,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "proj/255clock.md",
+            "file": "proj/calculator.md",
             "mode": "preview"
           }
         },
@@ -81,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "proj/255clock.md",
+                "file": "proj/calculator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,12 +103,12 @@
   },
   "active": "477dc35e95210390",
   "lastOpenFiles": [
-    "proj/255clock.md",
     "proj/calculator.md",
     "proj/mdpreview.md",
     "proj/portfolio_site.md",
-    "blog/atc_history.md",
+    "proj/255clock.md",
     "proj/phosphora.md",
+    "blog/atc_history.md",
     "proj/Untitled.md",
     "blog/test.md"
   ]
