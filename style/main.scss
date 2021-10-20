@@ -102,6 +102,15 @@ article{
     text-align: center;
     display: block;
   }
+  .img-collection{
+    display: flex;
+    width: 100%;
+  }
+  
+  .img-collection-piece{
+    display: inline;
+    max-width:50%;
+  }
 }
 
 iframe{

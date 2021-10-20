@@ -2,11 +2,16 @@
 
 <a class="source-link" target="_blank" href="https://github.com/bluephosphor/phosphora-2-3">[Source]</a>
 
+![Phosphora](/asset/img/projects/phos_header.gif)
+
 My main Game Maker project! I've been working on this on and off for a few years now when I have the time. Some key technical features I've built for this include.
 
 #### Procedural level generation
 
 - Several level generation algorithms were written for use in various areas, including Drunken Walk, Cellular Automata, and even a custom Maze generator using a Recursive Backtracking algorithm.
+
+![Some generated-maps](/asset/img/projects/phos_maps.png)
+<div class="img-footer">Ordered: Cellular Automata, Drunken Walk, Recursive Backtracking Maze</div>
 
 #### State Machines and Enemy AI
 
@@ -16,6 +21,13 @@ My main Game Maker project! I've been working on this on and off for a few years
 
 - Enemies can have passive, aggro and other states. Often times, sub states will be used to create even more complex behaviors (different attack patterns, blocking, ect.).
 
+<div class="img-collection">
+    <img class="img-collection-piece" src="/asset/img/projects/88.gif">
+    <img class="img-collection-piece" src="/asset/img/projects/96b.gif">
+</div>
+
 #### UI Elements
 
 - The Dialogue system, Inventory, HUD and all menus were written from scratch.
+
+![menus, inventories!](/asset/img/projects/107.gif)
