@@ -2,7 +2,7 @@
 
 <a class="source-link" target="_blank" href="https://github.com/bluephosphor/phosphora-2-3">[Source]</a>
 
-![Phosphora](/asset/img/projects/phos_header.gif)
+![Phosphora](../../img/projects/phos_header.gif)
 
 My main Game Maker project! I've been working on this on and off for a few years now when I have the time. Some key technical features I've built for this include.
 
@@ -10,7 +10,7 @@ My main Game Maker project! I've been working on this on and off for a few years
 
 - Several level generation algorithms were written for use in various areas, including Drunken Walk, Cellular Automata, and even a custom Maze generator using a Recursive Backtracking algorithm.
 
-![Some generated-maps](/asset/img/projects/phos_maps.png)
+![Some generated-maps](../../img/projects/phos_maps.png)
 <div class="img-footer">Ordered: Cellular Automata, Drunken Walk, Recursive Backtracking Maze</div>
 
 #### State Machines and Enemy AI
@@ -30,4 +30,4 @@ My main Game Maker project! I've been working on this on and off for a few years
 
 - The Dialogue system, Inventory, HUD and all menus were written from scratch.
 
-![menus, inventories!](/asset/img/projects/107.gif)
+![menus, inventories!](../../img/projects/107.gif)
