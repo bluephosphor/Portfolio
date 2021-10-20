@@ -22,8 +22,8 @@ My main Game Maker project! I've been working on this on and off for a few years
 - Enemies can have passive, aggro and other states. Often times, sub states will be used to create even more complex behaviors (different attack patterns, blocking, ect.).
 
 <div class="img-collection">
-    <img class="img-collection-piece" src="/asset/img/projects/88.gif">
-    <img class="img-collection-piece" src="/asset/img/projects/96b.gif">
+    <img class="img-collection-piece" src="../../img/projects/88.gif">
+    <img class="img-collection-piece" src="../../img/projects/96b.gif">
 </div>
 
 #### UI Elements
