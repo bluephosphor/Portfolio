@@ -25,6 +25,7 @@ const Elements = {
                             })
                         },                      
     article_nav:        article =>{
+                            if (screen.width < 700) return;
                             let target  = id('nav-secondary');
                             let list    = article.querySelectorAll("h2,h3,h4,h5");
                         
