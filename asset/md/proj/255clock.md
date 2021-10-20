@@ -5,7 +5,7 @@
 <div class="source-links">
 <a class="source-link" target="_blank" href="https://bluephosphor.github.io/portfolio/asset/example/255clock.html">[Full page version]</a>
 
-<a class="source-link" target="_blank" href="https://github.com/bluephosphor/portfolio/blob/main/asset/example/255clock.jsl">[Source]</a>
+<a class="source-link" target="_blank" href="https://github.com/bluephosphor/portfolio/blob/main/asset/example/255clock.js">[Source]</a>
 </div>
 
 
