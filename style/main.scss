@@ -260,3 +260,38 @@ iframe{
 ::-webkit-scrollbar-thumb:hover {
   background: #757;
 }
+
+@media screen and (max-width: 700px) {
+  #main{
+    flex-direction: column;
+  }
+  .navbar{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 284px;
+    max-width: none;
+    width: auto;
+    margin-left:  16px;
+    margin-right: 16px;
+    a{
+      border-top: none;
+    }
+  }
+  .img-round{
+    display: none;
+  }
+  .link-section{
+    font-size: 0.7em;
+    border-top: none;
+    .link-icon{
+      flex-basis: none;
+    }
+    i{
+      font-size:     2em;
+      margin:        none;
+      padding:       none;
+    }
+  }
+}
