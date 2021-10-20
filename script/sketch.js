@@ -1,8 +1,21 @@
+let player;
 function setup() {
-    createCanvas(640, 400);
+    createCanvas(320, 240);
 }
   
 function draw() {
-    circle(30,30,20); 
     background(220);
+    circle(30,30,20); 
+}
+
+class Player {
+    constructor(){
+
+    }
+    update(){
+
+    }
+    show(){
+
+    }
 }

@@ -6,11 +6,9 @@
             @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
 
             body{
-                width: 21cm;
-                height: 29.7cm;
-                margin: 5mm 5mm 5mm 5mm; 
+                
                 font-family: 'Scheherazade New', serif;
-                line-height: 1.4;
+                line-height: 1.8;
             }
             hr{
                 width: 100%;
@@ -36,17 +34,22 @@
                 display:flex;
                 flex-direction:column;
             }
+            .job-title{
+                font-size: 0.8em;
+                color: #666;
+            }
             .sub-container{
                 background: #EEE;
                 padding:2px;
             }
             .skill-list{
+                margin-top: 4px;
                 display:flex;
                 flex-direction: column;
             }
             .subskill{
                 color: #666;
-                margin-top: -8px;
+                margin-top: -6px;
                 margin-left: 16px;
             }
             
@@ -71,6 +74,10 @@
             #sidebar{
                 background:#EEE;
                 padding: 16px;
+                font-size: 0.8em;
+            }
+            #sidebar li{
+                margin-left:-4px;
             }
             #contact{
                 display: grid;
@@ -90,12 +97,17 @@
                 <div class="container-y" id="main">
                     <section id="summary">
                         <h2>Professional Summary</h2>
-                        <p>Motivated worker seeking opportunity to gain hands-on experience to complement education. Great communication skills backed by positive attitude and willingness to work hard. Reliable in completing accurate and timely work under deadlines. Ready to go extra mile to meet expectations in performance and quality.</p>
+                        <p>
+                            Motivated worker seeking opportunity to gain hands-on front-end development experience to complement studies. 
+                            5+ years of creating games with code has turned into a passion to make a career out of software and web development.
+                            After months of self-studies and building projects, eager to learn more and cultivate these skills in a real working environment.
+                            Ready to go the extra mile to meet and exceed expectations in performance and quality.
+                        </p>
                     </section>
                     <hr>
                     <section id="work-history">
                         <h2>Work History</h2>
-                        <h3>Our Lady Chapel at Gilmour Academy - Technical Assistant</h3>
+                        <h3>Our Lady Chapel at Gilmour Academy - <span class="job-title">Technical Assistant</span></h3>
                         <div class="sub-container">
                             <span class="location">Gates Mills, Ohio</span><br>
                             <span class="date">October 2019 - Current</span>
@@ -107,7 +119,7 @@
                             <li>Volunteered to help with special projects of varying degrees of complexity.</li>
                         </ul>
 
-                        <h3>Starbucks - Barista</h3>
+                        <h3>Starbucks - <span class="job-title">Barista</span></h3>
                         <div class="sub-container">
                             <span class="location">Rocky River, Ohio</span><br>
                             <span class="date">September 2017 - Current</span>
@@ -134,14 +146,17 @@
                     <section id="portfolio">
                         <h3>Portfolio</h3>
                         <ul>
-                            <li><a href="https://bluephosphor.github.io/portfolio/" target="_blank">bluephosphor.github.io</a></li>
+                            <li><a href="https://bluephosphor.github.io/portfolio/" target="_blank">bluephosphor.github.io/portfolio</a></li>
                         </ul>
                     </section>
                     <hr>
                     <section id="skills">
                         <h3>Skills</h3>
                         <ul>
+                            <li>Avid Learner</li>
                             <li>Responsive Web Design</li>
+                            <li>User Experience Design</li>
+                            <li>Reference/Documentation research</li>
                             <li>Front-End-Skills:
                                 <div class="skill-list">
                                     <span class="subskill">HTML</span>
@@ -155,12 +170,6 @@
                                     <span class="subskill">jQuery</span>
                                 </div>
                             </li>
-                            <li>Avid Learner</li>
-                            <li>Reference research</li>
-                            <li>Customer or student assistance</li>
-                            <li>Media and recording options</li>
-                            <li>User Experience Design</li>
-                            <li>Content Creation Tools</li>
                         </ul>
                     </section>
                     <hr>
