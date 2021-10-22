@@ -44,7 +44,6 @@ body {
 
 article {
   padding: 0px 16px 8px 16px;
-  text-align: justify;
 }
 article h1, article h2, article h3, article h4, article h5 {
   display: block;
@@ -99,6 +98,12 @@ iframe {
   align-self: center;
   border: none;
   width: 100%;
+}
+
+.p5Canvas {
+  display: block;
+  align-self: center;
+  margin-top: 16px;
 }
 
 .img-footer {

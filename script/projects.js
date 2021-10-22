@@ -10,6 +10,12 @@ const Projects = {
             tags:   ["web-dev","html","scss","javascript"]
         },
         {
+            name:   "Maze Generator", 
+            source: "maze.md", 
+            posted: "October 2021",
+            tags:   ["web-dev","html","css","javascript", "p5"]
+        },
+        {
             name:   "25 + 5 Clock", 
             source: "255clock.md", 
             posted: "October 2021",

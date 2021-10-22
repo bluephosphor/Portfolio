@@ -62,7 +62,7 @@ body{
 
 article{
   padding:    0px 16px 8px 16px;
-  text-align: justify;
+  //text-align: justify;
   h1,h2,h3,h4,h5{
     display: block;
     background: $block-bg;
@@ -118,6 +118,12 @@ iframe{
   align-self: center;
   border: none;
   width: 100%;
+}
+
+.p5Canvas{
+  display:block;
+  align-self: center;
+  margin-top: 16px;
 }
 
 .img-footer{

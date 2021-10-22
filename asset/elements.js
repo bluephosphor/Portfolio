@@ -38,14 +38,15 @@ const Elements = {
                             arr.forEach(e => {
                               [mod, hash] = ['',''];
                               switch(e){
-                                case 'html':        mod  = ' style="color: cyan;"';     break;
-                                case 'css':         mod  = ' style="color: pink;"';     break;
-                                case 'scss':        mod  = ' style="color: red;"';      break;
-                                case 'javascript':  mod  = ' style="color: yellow;"';   break;
+                                case 'html':        mod  = ' style="color: cyan;"';       break;
+                                case 'css':         mod  = ' style="color: pink;"';       break;
+                                case 'scss':        mod  = ' style="color: red;"';        break;
+                                case 'javascript':  mod  = ' style="color: yellow;"';     break;
                                 case 'react':       mod  = ' style="color: aquamarine;"'; break;
-                                case 'gml':         mod  = ' style="color: green;"';    break;
-                                case 'glsl':        mod  = ' style="color: gray;"';     break;
-                                default:            hash = '#';                         break;
+                                case 'gml':         mod  = ' style="color: green;"';      break;
+                                case 'glsl':        mod  = ' style="color: gray;"';       break;
+                                case 'p5':          mod  = ' style="color: orange;"';     break;
+                                default:            hash = '#';                           break;
                               }
                               str += `<a class="tag"${mod}>${hash}${e}</a>`;
                             });
