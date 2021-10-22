@@ -63,6 +63,7 @@ function Cell(i, j) {
         fill(...color);
         rect(x,y,w*mod,w*mod);
         
+        if (this.state != UNVISITED){
         fill(200);
         //draw corners
         
@@ -88,6 +89,7 @@ function Cell(i, j) {
         if (this.walls[LEFT]) {
             rect(x - w, y, w, w);
         }
+      }
     }
 }
 

@@ -1,6 +1,6 @@
 ### Technologies used: <span style="color:cyan">HTML</span> | <span style="color:pink">CSS</span> | <span style="color:yellow">JavaScript</span> (p5.js)
 
-<iframe src="https://bluephosphor.github.io/portfolio/asset/example/maze.html" height="360 "title="maze"></iframe>
+<iframe src="https://bluephosphor.github.io/portfolio/asset/example/maze.html" height="500 "title="maze"></iframe>
 
 <a class="source-link" target="_blank" href="https://bluephosphor.github.io/portfolio/asset/example/maze.html">[Full page version]</a>
 
