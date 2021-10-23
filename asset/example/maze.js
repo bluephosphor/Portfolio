@@ -1,5 +1,7 @@
 const [TOP, RIGHT, BOTTOM, LEFT, SUPER_SLOW, SLOW, FAST, UNVISITED, VISITED, IN_STACK, CURRENT, NEXT] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
+
+
 class Cell {
     constructor(i, j) {
         this.i = i;
@@ -12,10 +14,10 @@ class Cell {
         this.check_neighbors = () => {
             let neighbors = [];
 
-            let top = grid[index(i, j - 1)];
-            let right = grid[index(i + 1, j)];
-            let bottom = grid[index(i, j + 1)];
-            let left = grid[index(i - 1, j)];
+            let top     = grid[index(i,     j - 1)];
+            let right   = grid[index(i + 1, j)];
+            let bottom  = grid[index(i,     j + 1)];
+            let left    = grid[index(i - 1, j)];
 
             if (top && top.state == UNVISITED) {
                 neighbors.push(top);
@@ -182,7 +184,10 @@ function maze_step() {
 }
 
 function setup() {
-    createCanvas(348, 348);
+    const MOBILE = (windowWidth < 700);
+    let dims = [344,344];
+    if (MOBILE) dims = [248,344];
+    createCanvas(...dims);
     cols = floor(width / w / 2);
     rows = floor(height / w / 2);
     initialize();
