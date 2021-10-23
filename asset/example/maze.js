@@ -184,7 +184,7 @@ function maze_step() {
 }
 
 function setup() {
-    const MOBILE = (windowWidth < 700);
+    const MOBILE = (displayWidth * pixelDensity() < 700);
     let dims = [344,344];
     if (MOBILE) dims = [248,344];
     createCanvas(...dims);
