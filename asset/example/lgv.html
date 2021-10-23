@@ -28,6 +28,17 @@
                 height: 16px;
                 margin:0px 8px;
             }
+            label{
+                margin: 8px 0px;
+            }
+            #setfps{
+                color: white;
+                background: #333;
+                border: 1px solid white;
+                margin : 8px;
+                width: 32px;
+                border-radius: 2px;
+            }
             button{
                 background: black;
                 color:white;
@@ -52,13 +63,15 @@
     </head>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
-        <script src="maze.js"></script>
+        <script src="lgv/cell.js"></script>
+        <script src="lgv/maze.js"></script>
         <div class="container-y">
             <main></main>
             <div class="container-x">
-                <button onclick="set_mode(SUPER_SLOW)">Super Slow</button>
-                <button onclick="set_mode(SLOW)">Slow</button>
-                <button onclick="set_mode(FAST)">Instant</button>
+                <label for="fps">FPS:</label>
+                <input id="setfps" type="text" name="fps" value="30">
+                <button onclick="set_mode(SLOW, document.getElementById('setfps').value)">Reset</button>
+                <button onclick="set_mode(FAST, 30)">Instant</button>
             </div>
             <div class="legend">
                 <div class="container-x">

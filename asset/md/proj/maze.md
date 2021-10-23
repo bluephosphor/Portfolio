@@ -1,10 +1,10 @@
 ### Technologies used: <span style="color:cyan">HTML</span> | <span style="color:pink">CSS</span> | <span style="color:yellow">JavaScript</span> (p5.js)
 
-<iframe src="https://bluephosphor.github.io/portfolio/asset/example/maze.html" height="500 "title="maze"></iframe>
+<iframe src="https://bluephosphor.github.io/portfolio/asset/example/lgv.html" height="500 "title="maze"></iframe>
 
-<a class="source-link" target="_blank" href="https://bluephosphor.github.io/portfolio/asset/example/maze.html">[Full page version]</a>
+<a class="source-link" target="_blank" href="https://bluephosphor.github.io/portfolio/asset/example/lgv.html">[Full page version]</a>
 
-<a class="source-link" target="_blank" href="https://github.com/bluephosphor/portfolio/blob/main/asset/example/maze.js">[Source]</a>
+<a class="source-link" target="_blank" href="https://github.com/bluephosphor/portfolio/blob/main/asset/example/lgv">[Source]</a>
 
 For this personal project I decided to showcase the maze generation algorithm I used in my game Phosphora.
 
