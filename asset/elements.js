@@ -1,7 +1,5 @@
 // A list of literals and functional generators for some reuseable html elements
 
-const MOBILE = (screen.width < 700);
-
 const Elements = {
     sidebar_img:        '<img class="img-round" src="asset/img/phosphora.png">',
 
@@ -27,7 +25,7 @@ const Elements = {
                             })
                         },                      
     article_nav:        article =>{
-                            if (MOBILE) return;
+                            if (screen.width < 700) return;
                             let target  = id('nav-secondary');
                             let list    = article.querySelectorAll("h2,h3,h4,h5");
                         
