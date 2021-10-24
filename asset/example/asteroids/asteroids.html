@@ -3,14 +3,53 @@
     <head>
         <meta name="viewport" content="width=device-width" />
         <meta charset="utf-8" />
-        
+        <style>
+            body {
+                background: #050708;
+                color: white;
+                font-family: monospace;
+            }
+            button{
+                background: black;
+                color: white;
+                border: 1px solid white;
+                font-family: monospace;
+                padding: 4px;
+                margin: 0px 8px 8px 8px;
+            }
+            .container-x{
+                display:flex;
+            }
+            .container-y{
+                display:flex;
+                flex-direction: column;
+            }
+            .ast-name{
+                margin:4px;
+            }
+            #main{
+                
+                justify-content: center;
+            }
+            #application{
+                border: 1px solid white;
+            }
+        </style>
         
     </head>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="orbit.js"></script>
         <script src="asteroids.js"></script>
-        <main></main>
-        <button onclick="fetch_json(api_url)">Get Today's Data</button>
-        <button onclick="fetch_json('ast_example_data.json')">Get Example Data</button>
+        
+        <div class="container-x" id="main">
+            <main id="application"></main>
+            <div class="container-y" id="info">
+                <button onclick="fetch_json(api_url)">Get Today's Data</button>
+                <button onclick="fetch_json('ast_example_data.json')">Get Sample Data</button>
+            </div>
+            
+        </div>
+        
     </body>
 </html>
