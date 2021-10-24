@@ -17,3 +17,5 @@ app.ticker.add(() => {
     // just for fun, let's rotate niko a little
     niko.rotation += 0.01;
 });
+
+
