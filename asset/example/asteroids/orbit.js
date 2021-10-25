@@ -37,9 +37,9 @@ class Orbit {
             fill(this.color);
             if (this.hasOwnProperty("reference_index")){
                 let str = Asteroids.near_earth_objects[DAY][this.reference_index].name;
-                text(str,this.x,this.y-this.r);
+                stroke(0);
+                text(str,this.x,this.y-this.r/2);
             }
-            stroke(0);
             ellipse(this.x, this.y, this.r, this.r);
             stroke(255, 50);
             strokeWeight(1);

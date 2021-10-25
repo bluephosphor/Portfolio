@@ -10,10 +10,16 @@ const Projects = {
             tags:   ["web-dev","html","scss","javascript"]
         },
         {
-            name:   "Maze Generator", 
+            name:   "Nearby Asteroids (NASA API Demo)", 
+            source: "asteroids.md", 
+            posted: "October 2021",
+            tags:   ["web-dev","html","css","p5"]
+        },
+        {
+            name:   "Recursive Backtracking Maze Generator", 
             source: "maze.md", 
             posted: "October 2021",
-            tags:   ["web-dev","html","css","javascript", "p5"]
+            tags:   ["web-dev","html","css","p5"]
         },
         {
             name:   "25 + 5 Clock", 

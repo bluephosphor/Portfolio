@@ -37,7 +37,7 @@ async function fetch_json(url) {
             <span class="ast-name">${ast.name}</span>
             <span class="expand-icon" id='${url_slug(ast.name)}-icon'>[+]</span>
         </div>
-        <div class="container-y ast-info" id='${url_slug(ast.name)}-info'>
+        <div class="container-y ast-info" id='${url_slug(ast.name)}-info' index=${i}>
             <span class="ast-attribute">ID: ${ast.id}</span>
             <span class="ast-attribute">Magnitude: ${ast.absolute_magnitude_h}h</span>
             <span class="ast-attribute">Diameter (Estimate):<br> ${ast.estimated_diameter.kilometers.estimated_diameter_min}km - ${ast.estimated_diameter.kilometers.estimated_diameter_max}km</span>
@@ -55,7 +55,7 @@ function setup(){
     offset  = createVector(width/2,height/2);
     zoom    = 1;
 
-    canvas.mouseWheel((event) => zoom += event.deltaY/1000);
+    canvas.mouseWheel(event => zoom = clamp(zoom + event.deltaY/1000, 0.1,10));
     
     Earth = new Orbit(0,0,width/10,0);
     textFont('Monospace');
@@ -101,14 +101,17 @@ function expand_info(name) {
     let section     = id(`${url_slug(name)}-info`);
     let icon        = id(`${url_slug(name)}-icon`);
     let is_opened   = section.getAttribute('data-opened') === 'true';
+    let i           = section.getAttribute('index');
   
     if(is_opened) {
         collapse_section(section);
         icon.innerText = "[+]";
         section.style.borderBottom = 'none';
+        draw_data[i].color = 255;
     } else {
         expand_section(section);
         icon.innerText = "[-]";
         section.style.borderBottom = '1px solid white';
+        draw_data[i].color = [255,0,0];
     }
 }
