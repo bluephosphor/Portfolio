@@ -44,7 +44,7 @@ class Orbit {
             stroke(255, 50);
             strokeWeight(1);
             noFill();
-            ellipse(width/2,height/2,this.dist*2);
+            ellipse(0,0,this.dist*2);
         };
     }
 }
