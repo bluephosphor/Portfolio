@@ -1,5 +1,7 @@
 ### Technologies used: <span style="color:cyan">HTML</span> | <span style="color:pink">CSS</span> | <span style="color:yellow">JavaScript</span> (p5.js)
 
+![NASA Asteroid data visualized](https://bluephosphor.github.io/portfolio/asset/img/projects/asteroids.png)
+
 <a class="source-link" target="_blank" href="https://bluephosphor.github.io/portfolio/asset/example/asteroids/asteroids.html">[Full page application]</a>
 
 <a class="source-link" target="_blank" href="https://github.com/bluephosphor/portfolio/blob/main/asset/example/asteroids">[Source]</a>
