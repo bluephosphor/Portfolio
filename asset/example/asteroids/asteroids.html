@@ -24,30 +24,45 @@
                 display:flex;
                 flex-direction: column;
             }
+            .ast-label{
+                align-items: center;
+                justify-content: space-between;
+            }
             .ast-name{
                 margin:4px;
+                padding: 4px;
                 font-size: 1.2em;
             }
             .ast-info{
-                background: #222;
+                background: #111;
                 margin: 4px;
-                padding: 4px;
+                border-top: 1px solid white;
+                overflow: hidden;
+                transition: height 0.3s ease-out;
+                height: 0px;
+                flex-shrink: 0;
             }
             .ast-attribute{
                 margin-bottom:4px;
                 border-bottom: 1px solid #ffffff33;
             }
+            .expand-icon{
+                text-align: right;
+                color: #777;
+                font-size: 0.8em;
+                margin:8px;
+            }
             #main{
-                
+                max-height: 97vh;
                 justify-content: center;
             }
             #application{
                 border: 1px solid white;
+                overflow:hidden;
             }
             #info{
                 width: 256px;
-                height:771px;
-                overflow: auto;
+                overflow-y: scroll;
                 border: 1px solid white;
             }
         </style>
@@ -55,6 +70,7 @@
     </head>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="../../elements.js"></script>
         <script src="orbit.js"></script>
         <script src="asteroids.js"></script>
         
@@ -62,10 +78,7 @@
             <main id="application"></main>
             <div class="container-y" id="info">
                 <button onclick="fetch_json(api_url)">Get Today's Data</button>
-                <button onclick="fetch_json('ast_example_data.json')">Get Sample Data</button>
             </div>
-            
         </div>
-        
     </body>
 </html>

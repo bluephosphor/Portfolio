@@ -1,9 +1,3 @@
-// Some small essentials. 
-const id            = id          => document.getElementById(id);
-const irandom_range = (min, max)  => Math.floor(Math.random() * (max - min) ) + min;
-const url_slug      = text        => text.toLowerCase().replace(/[^\w ]+/g, '').replace(/ +/g, '-');
-const delay         = time        => new Promise(resolve => setTimeout(resolve, time));
-
 // Keeping main site data in one place.
 const [LIST, ARTICLE] = [0,1];
 const Site = {

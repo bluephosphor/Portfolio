@@ -33,8 +33,11 @@ async function fetch_json(url) {
 
         //get data for webpage
         html_list += 
-        `<span class="ast-name">${ast.name}</span>
-        <div class="container-y ast-info" id='${ast.name}-info'>
+        `<div class="container-x ast-label" onclick="expand_info('${ast.name}')">
+            <span class="ast-name">${ast.name}</span>
+            <span class="expand-icon" id='${url_slug(ast.name)}-icon'>[+]</span>
+        </div>
+        <div class="container-y ast-info" id='${url_slug(ast.name)}-info'>
             <span class="ast-attribute">ID: ${ast.id}</span>
             <span class="ast-attribute">Magnitude: ${ast.absolute_magnitude_h}h</span>
             <span class="ast-attribute">Diameter (Estimate):<br> ${ast.estimated_diameter.kilometers.estimated_diameter_min}km - ${ast.estimated_diameter.kilometers.estimated_diameter_max}km</span>
@@ -44,7 +47,7 @@ async function fetch_json(url) {
             <span class="ast-attribute">Potentially Hazardous: ${(ast.is_potentially_hazardous_asteroid) ? '<span style="color:red"> Yes </span>' : '<span style="color:green"> No </span>'} </span>
         </div>`;
     })
-    document.getElementById("info").innerHTML += html_list;
+    id("info").innerHTML += html_list;
 }
 
 function setup(){
@@ -53,7 +56,6 @@ function setup(){
     zoom    = 1;
 
     canvas.mouseWheel((event) => zoom += event.deltaY/1000);
-    
     
     Earth = new Orbit(0,0,width/10,0);
     textFont('Monospace');
@@ -94,3 +96,19 @@ function mouseDragged(event) {
     offset.x += event.movementX;
     offset.y += event.movementY;
 } 
+
+function expand_info(name) {
+    let section     = id(`${url_slug(name)}-info`);
+    let icon        = id(`${url_slug(name)}-icon`);
+    let is_opened   = section.getAttribute('data-opened') === 'true';
+  
+    if(is_opened) {
+        collapse_section(section);
+        icon.innerText = "[+]";
+        section.style.borderBottom = 'none';
+    } else {
+        expand_section(section);
+        icon.innerText = "[-]";
+        section.style.borderBottom = '1px solid white';
+    }
+}

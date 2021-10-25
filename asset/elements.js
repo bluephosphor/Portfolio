@@ -1,3 +1,9 @@
+// Some small essentials. 
+const id            = id          => document.getElementById(id);
+const irandom_range = (min, max)  => Math.floor(Math.random() * (max - min) ) + min;
+const url_slug      = text        => text.toLowerCase().replace(/[^\w ]+/g, '').replace(/ +/g, '-');
+const delay         = time        => new Promise(resolve => setTimeout(resolve, time));
+
 // A list of literals and functional generators for some reuseable html elements
 
 const Elements = {
