@@ -8,4 +8,4 @@
 
 Ever wanted to know what Asteroids recently made a swing by Earth? Well, I created a tool to visualize that!
 
-By grabbing recent data from one of Nasa's many amazing Open APIs, we're able to create a fun and interactive demo representing very real data. We're once again using the JS fetch API to grab the data, and the p5.js library for drawing in the canvas.
+By grabbing recent data from one of NASA's many amazing Open APIs, we're able to create a fun and interactive demo representing very real data. We're once again using the JS fetch API to grab the data, and the p5.js library for drawing in the canvas.

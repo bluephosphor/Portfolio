@@ -22,6 +22,12 @@ const Projects = {
             tags:   ["web-dev","html","css","p5"]
         },
         {
+            name:   "Phosphora", 
+            source: "phosphora.md", 
+            posted: "January 2020 - Current",
+            tags:   ["game-dev","gml","glsl"]
+        },
+        {
             name:   "25 + 5 Clock", 
             source: "255clock.md", 
             posted: "October 2021",
@@ -38,13 +44,7 @@ const Projects = {
             source: "mdpreview.md", 
             posted: "October 2021",
             tags:   ["web-dev","html","css","react"]
-        },
-        {
-            name:   "Phosphora", 
-            source: "phosphora.md", 
-            posted: "January 2020 - Current",
-            tags:   ["game-dev","gml","glsl"]
-        },
+        }
     ],
     open_post: name => {
         let section     = id(url_slug(name) + '-content');
