@@ -92,10 +92,23 @@ function draw(){
     }
 }
 
+//handle moving image around in mouseDragged()
 function mouseDragged(event) {
     offset.x += event.movementX;
     offset.y += event.movementY;
 } 
+//handle clicking on asterpids in mouseclicked()
+function mouseClicked(event) {
+    let mx = Math.round((mouseX * zoom) - offset.x);
+    let my = Math.round((mouseY * zoom) - offset.y);
+    console.log(`x:${mx} y:${my}`)
+    console.log("zoom:" + zoom);
+    draw_data.forEach(ast => {
+        if (ast.in_boundary(mx,my)) {
+            expand_info(Asteroids.near_earth_objects[DAY][ast.reference_index].name);
+        }
+    })
+}
 
 function expand_info(name) {
     let section     = id(`${url_slug(name)}-info`);

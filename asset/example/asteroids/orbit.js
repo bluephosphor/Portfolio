@@ -7,12 +7,12 @@ class Orbit {
         this.r = r_;
         this.parent = p;
         this.child = null;
-        this.speed = s; console.log(this.speed)
+        this.speed = s;
         this.angle = -PI / 2;
         this.dist  = 0;
         this.color = [0,50,100];
 
-        this.add_child = function (dist, rad, angle, speed) {
+        this.add_child = (dist, rad, angle, speed) => {
             let newr = rad;
             let newx = this.x;
             let newy = this.y;
@@ -24,7 +24,7 @@ class Orbit {
             return this.child;
         };
 
-        this.update = function () {
+        this.update = () => {
             let parent = this.parent;
             if (parent != null) {
                 this.angle += this.speed;
@@ -33,7 +33,7 @@ class Orbit {
             }
         };
 
-        this.show = function () {
+        this.show = () => {
             fill(this.color);
             if (this.hasOwnProperty("reference_index")){
                 let str = Asteroids.near_earth_objects[DAY][this.reference_index].name;
@@ -46,5 +46,15 @@ class Orbit {
             noFill();
             ellipse(0,0,this.dist*2);
         };
+
+        this.in_boundary = (x,y) => {
+            let r = clamp(this.r, 16, 1000);
+            return (
+                x > (this.x) - r &&
+                x < (this.x) + r &&
+                y > (this.y) - r &&
+                y < (this.y) + r
+            )
+        }
     }
 }
