@@ -19,7 +19,7 @@ const Site = {
     fetch(url)
     .then((r)=>{r.text()
     .then((d)=>{
-      id(target).innerHTML = marked(d);
+      id(target).innerHTML = marked.parse(d);
       hljs.highlightAll();
     })});
   },
