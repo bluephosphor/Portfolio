@@ -6,8 +6,8 @@
 
 <a class="source-link" target="_blank" href="https://github.com/bluephosphor/GotGames">[Source]</a>
 
-Client project for Great Oaks Tavern. A Boardgame cafe located in Wadsworth, Ohio!
+Client project for [Great Oaks Tavern](https://www.greatoakstavern.com/). A Boardgame cafe located in Wadsworth, Ohio!
 
-Full-Stack Boardgame suggestion engine powered by Google Firebase and Vue. Pulling from BoardGameGeek's XML API and then expanding upon it in our own database. Currently it can suggest games in the catalog to customers based on things like playercount, age range, and playtime.
+Full-Stack Boardgame suggestion engine powered by Google Firebase in the back-end and Vue in the front-end. Pulling from BoardGameGeek's XML API, we can then expand upon that in our own database. Currently it can suggest games in the catalog to customers based on things like playercount, age range, and playtime.
 
 Future features will include better sorting, and data collection on game usage and popularity.
