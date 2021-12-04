@@ -50,6 +50,7 @@ const Elements = {
                                 case 'scss':        mod  = ' style="color: red;"';        break;
                                 case 'javascript':  mod  = ' style="color: yellow;"';     break;
                                 case 'react':       mod  = ' style="color: aquamarine;"'; break;
+                                case 'vue':         mod  = ' style="color: aquamarine;"'; break;
                                 case 'gml':         mod  = ' style="color: green;"';      break;
                                 case 'glsl':        mod  = ' style="color: gray;"';       break;
                                 case 'p5':          mod  = ' style="color: orange;"';     break;

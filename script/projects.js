@@ -4,10 +4,10 @@ const Projects = {
     state: LIST,
     posts: [
         {
-            name:   "Portfolio Site", 
-            source: "portfolio_site.md", 
-            posted: "October 2021 - Current",
-            tags:   ["web-dev","html","scss","javascript"]
+            name:   "GOT Games?", 
+            source: "gotgames.md", 
+            posted: "November 2021 - Current",
+            tags:   ["web-dev","html","scss","vue"]
         },
         {
             name:   "Nearby Asteroids (NASA API Demo)", 
@@ -33,18 +33,6 @@ const Projects = {
             posted: "October 2021",
             tags:   ["web-dev","html","css","javascript"]
         },
-        {
-            name:   "React Calculator", 
-            source: "calculator.md", 
-            posted: "October 2021",
-            tags:   ["web-dev","html","css","react"]
-        },
-        {
-            name:   "Live Markdown Previewer", 
-            source: "mdpreview.md", 
-            posted: "October 2021",
-            tags:   ["web-dev","html","css","react"]
-        }
     ],
     open_post: name => {
         let section     = id(url_slug(name) + '-content');
