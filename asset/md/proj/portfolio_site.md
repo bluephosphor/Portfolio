@@ -2,7 +2,7 @@
 
 <a class="source-link" target="_blank" href="https://github.com/bluephosphor/portfolio">[Source]</a>
 
-This very site! It feels appropriate to have this as the first project as it was my first full web project. I used plain html/css/javascript with some scss to make my stylesheets a little cleaner. Simplicity was a core concept going into this perticular project.
+This very site! It feels appropriate to have this as a project on here as it was my first full web project. I used plain html/css/javascript with some scss to make my stylesheets a little cleaner. Simplicity was a core concept going into this perticular project.
 
 I think keeping framework usage to a minimal was appropriate for a project of this scope, and as such has given me an opportunity to come up with my own ways of organizing things and making dynamic data happen.
 

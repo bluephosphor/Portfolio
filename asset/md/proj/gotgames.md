@@ -8,6 +8,6 @@
 
 Client project for [Great Oaks Tavern](https://www.greatoakstavern.com/). A Boardgame cafe located in Wadsworth, Ohio!
 
-Full-Stack Boardgame suggestion engine powered by Google Firebase in the back-end and Vue in the front-end. Pulling from BoardGameGeek's XML API, we can then expand upon that in our own database. Currently it can suggest games in the catalog to customers based on things like playercount, age range, and playtime.
+It is a Full-Stack Boardgame suggestion engine powered by Google Firebase in the back-end and Vue in the front-end. Pulling from BoardGameGeek's XML API, I can then expand upon that data in my own database and then query that database in more complex ways. Currently it can suggest games in the catalog to customers based on things like playercount, age range, and playtime.
 
-Future features will include better sorting, and data collection on game usage and popularity.
+Future features will include things like better sorting, and data collection on game usage and popularity.

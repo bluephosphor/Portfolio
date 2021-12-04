@@ -7,7 +7,7 @@ const Projects = {
             name:   "GOT Games?", 
             source: "gotgames.md", 
             posted: "November 2021 - Current",
-            tags:   ["web-dev","html","scss","vue"]
+            tags:   ["web-dev","html","css","vue"]
         },
         {
             name:   "Nearby Asteroids (NASA API Demo)", 
@@ -16,10 +16,16 @@ const Projects = {
             tags:   ["web-dev","html","css","p5"]
         },
         {
-            name:   "Recursive Backtracking Maze Generator", 
+            name:   "Labyrinth Generator", 
             source: "maze.md", 
             posted: "October 2021",
             tags:   ["web-dev","html","css","p5"]
+        },
+        {
+            name:   "This Site", 
+            source: "portfolio_site.md", 
+            posted: "Octover 2021 - Current",
+            tags:   ["web-dev","html","scss","javascript"]
         },
         {
             name:   "Phosphora", 

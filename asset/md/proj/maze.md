@@ -8,7 +8,7 @@
 
 For this personal project I decided to showcase the maze generation algorithm I used in my game Phosphora.
 
-It uses an iterative implementation of what's called the Randomized depth-first search algorithm, in this case it's often called a Recursive Backtracking Maze Generator. Though, since we're doing this iteratively, we're creating a virtual sort of recursion by creating our own stack. We start with a grid of 'cells'. We pick an initial cell to start with, then we push it onto our stack after marking it as 'visited'. From there, each iteration goes as follows:
+It uses an iterative implementation of what's called the Randomized depth-first search algorithm, in this case it's often called a Recursive Backtracking Maze Generator. Though, since we're doing this iteratively, we're creating a more contaned sort of recursion by creating our own stack. We start with a grid of 'cells'. We pick an initial cell to start with, then we push it onto our stack after marking it as 'visited'. From there, each iteration goes as follows:
 
 - While the stack is not empty:
     
