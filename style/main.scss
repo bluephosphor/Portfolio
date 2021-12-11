@@ -8,7 +8,7 @@ $code-gray:       #CBC0CC;
 $soft-outline:    #CBC0CC70;
 $line:            #464044;
 $background-1:    #120D16;
-$background-trans:#09000899;
+$background-trans:#090008A9;
 $block-bg:        rgb(20, 24, 31);
 
 @mixin box {
@@ -40,7 +40,7 @@ body{
   margin:           auto;
   font-family:      'Assistant', sans-serif;
   color:            $text-main;
-  height:           97vh;
+  height:           96vh;
   justify-content:  space-between;
   a{
     color:         #DD88DD;
@@ -58,6 +58,16 @@ body{
   flex-grow:    10;
   overflow:     auto;
   min-width:    300px;
+}
+
+#ftr{
+    text-align: center;
+    font-family: monospace;
+    font-size: 0.8em;
+    color: $text-secondary;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 article{
@@ -218,7 +228,6 @@ iframe{
     align-items:     center;
     margin:          0px;
     padding-top:     0px;
-    border-top:      1px solid $line;
     .link-icon{
       flex-basis: 40px;
     }
@@ -274,6 +283,8 @@ iframe{
     min-width: 300px;
     max-width: none;
     width: auto;
+    border-top: none;
+    border-bottom: none;
   }
   #inner-body{
     margin: 0px;
@@ -306,12 +317,8 @@ iframe{
       border-top: none;
     }
   }
-  .img-round{
-    display: none;
-  }
   .link-section{
     font-size: 0.7em;
-    border-top: none;
     .link-icon{
       flex-basis: none;
     }
@@ -321,4 +328,16 @@ iframe{
       padding:       none;
     }
   }
+  .img-round{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
+
+    #nav-secondary{
+        .link-name{
+            display: none;
+        }
+    }
 }

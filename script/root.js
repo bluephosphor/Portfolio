@@ -9,6 +9,7 @@ const Site = {
   ],
 
   contact:[
+    {name: "Email",     url: "mailto:bow682@gmail.com",                   icon: `<i class="fas fa-envelope"></i>`},
     {name: "Twitter",   url:"https://twitter.com/phosphoradev",           icon: `<i class="fab fa-twitter"></i>`},
     {name: "LinkedIn",  url:"https://www.linkedin.com/in/bluephosphor/",  icon: `<i class="fab fa-linkedin"></i>`},
     {name: "GitHub",    url:"https://github.com/bluephosphor",            icon: `<i class="fab fa-github"></i>`},
@@ -42,3 +43,6 @@ const Site = {
 // Building the main navbars for every page.
 Elements.navigation();
 Elements.contact();
+
+//footer
+id('ftr').innerHTML = Elements.footer;

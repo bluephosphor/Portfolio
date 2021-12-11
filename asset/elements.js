@@ -14,6 +14,8 @@ const Elements = {
 
     back_button:        '<a class="back-button" onclick="Site.show_list()"> << Back to list << </a>',
 
+    footer:             '<span class="footer"> Jonny Andino - bow682@gmail.com - (419)-577 3467 </span>',
+
     navigation:         () => {
                             id('nav-main').innerHTML += Elements.sidebar_img;
 
