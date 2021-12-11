@@ -7,7 +7,7 @@ const Projects = {
             name:   "GOT Games?", 
             source: "gotgames.md", 
             posted: "November 2021 - Current",
-            tags:   ["web-dev","html","css","vue"]
+            tags:   ["web-dev","vue", "firebase"]
         },
         {
             name:   "Nearby Asteroids (NASA API Demo)", 
@@ -60,6 +60,6 @@ const Projects = {
 }
 
 //getting our list html and saving it.
-var RENDERED_LIST = '';
+var RENDERED_LIST = '<h2 align="center">Press [+] on a Project Name to learn more about it!</h2>';
 Projects.posts.forEach(elem => {RENDERED_LIST += Elements.proj_list_item(elem)});
 id("posts").innerHTML = RENDERED_LIST;

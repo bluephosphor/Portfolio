@@ -53,6 +53,7 @@ const Elements = {
                                 case 'vue':         mod  = ' style="color: aquamarine;"'; break;
                                 case 'gml':         mod  = ' style="color: green;"';      break;
                                 case 'glsl':        mod  = ' style="color: gray;"';       break;
+                                case 'firebase':   
                                 case 'p5':          mod  = ' style="color: orange;"';     break;
                                 default:            hash = '#';                           break;
                               }
