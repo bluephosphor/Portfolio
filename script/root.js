@@ -4,7 +4,8 @@ const Site = {
   page:[
     {name: "Home",      url: "index.html"},
     {name: "Projects",  url: "projects.html"},
-    {name: "Blog",      url: "blog.html"},
+    //{name: "Blog",      url: "blog.html"},
+    {name: "Resume",    url: "template.html"},
   ],
 
   contact:[
