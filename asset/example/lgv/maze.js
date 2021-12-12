@@ -76,7 +76,6 @@ function remove_walls(a, b) {
 }
 
 function maze_step() {
-    
     // mark current cell as visited, then check for unvisited neighbors
     current.state = VISITED;
     let next = current.check_neighbors();
