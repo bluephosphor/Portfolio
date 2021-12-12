@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+body{
+    font-family: 'Zilla Slab', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    background: white;
+}
+hr{
+    width: 100%;
+    color: rgb(46, 89, 117);
+}
+h1,h2,h3,h4,h5{
+    margin-top:-8px;
+    font-style: italic;
+}
+i{
+    color: rgb(46, 89, 117);
+    font-size: 1.5em;
+    justify-self: center;
+}
+.date{
+    font-style: italic;
+    color:#788;
+}
+.container-x{
+    display:flex;
+}
+.container-y{
+    display:flex;
+    flex-direction:column;
+}
+.job-title{
+    font-size: 0.8em;
+    color: #666;
+}
+.sub-container{
+    background: #EEE;
+    padding:2px;
+    border-radius: 5px;
+    padding:0px 8px;
+}
+.skill-list{
+    margin-top: 4px;
+    display:flex;
+    flex-direction: column;
+}
+.subskill{
+    color: #666;
+    margin-top: -6px;
+    margin-left: 16px;
+}
+#resume{
+    max-width: 1000px;
+    margin: 0px auto;
+    border: 3px solid black;
+}
+#header{
+    font-family: 'Abhaya Libre', serif;
+    background: rgb(46, 89, 117);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+}
+#header-logo{
+    border:1px solid white;
+    margin-top:16px;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main{
+    padding:16px;
+    width:70%
+}
+#sidebar{
+    background:#EEE;
+    padding: 16px;
+    font-size: 0.8em;
+}
+#sidebar li{
+    margin-left:-4px;
+}
+#contact{
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 32px 32px 32px;
+}
