@@ -8,7 +8,7 @@
 
 For this personal project I decided to showcase the maze generation algorithm I used in my game Phosphora. for context, Phosphora is a roguelike with unique procedurally generated levels. I needed a way to generate a labyrinth that would be unique every time, and also look nice and neat like you would expect. 
 
-The solution is really interesting.
+The solution is really interesting, and so I thought it would be fun to slow it down and visualize it.
 
 We start with a grid of 'cells'. We then impliment a Breadth-First Search philosiphy to traverse our grid of cells and operate on them. We pick an initial cell to start with, then we push it onto our stack. From there, each iteration goes as follows:
 
@@ -44,3 +44,5 @@ while (!finished) {
 ```
 
 I like to think of it like an ant digging tunnels. Our curent cell is our ant, and it's constantly creating passages until it gets stuck, then it's time to turn around go back until it finds a way it hasn't gone yet. This process is extremely thorough and always leaves us with a unique labyrinth.
+
+Obviously, in the above live example, we're not operating inside of the while loop (unless we pressed 'instant') rather we're letting each step take place on a given frame. It was really fun to visualize the different operations using different colors and I think it creates an effect that is really interesting and satisfying to watch.
