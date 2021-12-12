@@ -10,13 +10,16 @@ For this personal project I decided to showcase the maze generation algorithm I 
 
 The solution is really interesting, and so I thought it would be fun to slow it down and visualize it.
 
-We start with a grid of 'cells'. We then impliment a Breadth-First Search philosophy to traverse our grid of cells and operate on them. We pick an initial cell to start with, then we push it onto our stack. From there, each iteration goes as follows:
+We start with a grid of 'cells'. We then impliment an iterative Depth-First-Search algorithm to traverse our grid of cells and operate on them, while keeping track of what cells we've vistied in a stack. How this works is we start by picking an initial cell to start with, then we push that cell onto our stack. From there, each iteration goes as follows:
 
 ```javascript
 while (!finished) {
     // Mark current cell as visited, then check for unvisited neighbors.
     current.state = VISITED;
     let next = current.check_neighbors();
+    // The check_neighbors function picks an adjacent cell at random,
+    // then it determines whether or not it has been visited.
+    // If not, then that cell is returned as our next cell.
 
     if (next) {
         // If there is a next cell, push the current cell into our stack.
@@ -26,18 +29,19 @@ while (!finished) {
         // Remove boundary between next and current cells.
         remove_walls(current, next);
 
-        // Move to next cell.
+        // Move to next cell, and repeat.
         current = next;
     
     } else if (stack.length > 0) {
-        // If no unvisited neighbors, move on and refer back to the stack.
+        // If no unvisited neighbors, refer back to the stack, and repeat.
         current = stack.pop();
         current.state = CURRENT;
 
     } else {
         // Once we get here we know that we've cleared the stack
-        // and there are no more unvisited neighbors.
-        finished = true;
+        // AND there are no more unvisited neighbors.
+        
+        finished = true; // Success!
 
     }
 }
