@@ -18,8 +18,11 @@ const Elements = {
 
     navigation:         () => {
                             id('nav-main').innerHTML += Elements.sidebar_img;
-
-                            Site.page.forEach(elem => id("nav-main").innerHTML += `<a href="${elem.url}">${elem.name}</a>`);
+                            
+                            Site.page.forEach(elem => {
+                                let tblank = (elem.new_tab) ? 'target="_blank"' : '';
+                                id("nav-main").innerHTML += `<a ${tblank} href="${elem.url}">${elem.name}</a>`
+                            });
                         },
     
     contact:            () => {

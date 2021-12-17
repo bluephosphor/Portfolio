@@ -2,10 +2,10 @@
 const [LIST, ARTICLE] = [0,1];
 const Site = {
   page:[
-    {name: "Home",      url: "index.html"},
-    {name: "Projects",  url: "projects.html"},
-    //{name: "Blog",      url: "blog.html"},
-    {name: "Resume",    url: "template.html"},
+    {name: "Home",      url: "index.html",      new_tab: false },
+    {name: "Projects",  url: "projects.html",   new_tab: false },
+    //{name: "Blog",      url: "blog.html"      new_tab: false },
+    {name: "Resume",    url: "resume.html",     new_tab: true },
   ],
 
   contact:[
