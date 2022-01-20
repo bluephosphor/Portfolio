@@ -16,6 +16,12 @@ const Projects = {
             tags:   ["web-dev","html","css","p5"]
         },
         {
+          name:   "Expandable Info Cards", 
+          source: "info-cards.md", 
+          posted: "January 2022",
+          tags:   ["web-dev","svelte"]
+        },
+        {
             name:   "Labyrinth Generator", 
             source: "maze.md", 
             posted: "October 2021",
