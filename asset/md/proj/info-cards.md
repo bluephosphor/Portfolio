@@ -1,6 +1,6 @@
 ### Technologies used: <span style="color:red">Svelte</span>
 
-![Expandable Info Card](https://bluephosphor.github.io/portfolio/asset/img/projects/info_card.png)
+![Expandable Info Card](https://bluephosphor.github.io/portfolio/asset/img/projects/info_card.png)  
 
 <a class="source-link" target="_blank" href="https://bluephosphor.github.io/portfolio/asset/example/info-cards/index.html">[Live Example]</a>
 
